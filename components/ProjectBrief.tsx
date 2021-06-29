@@ -15,7 +15,14 @@ export default function Project({ metadata, content }: ProjectProps) {
       }}
     >
       <h2>{name}</h2>
-      {youtubeId && <Youtube id={youtubeId} style={{ maxWidth: "30rem" }} />}
+      {youtubeId && (
+        <Youtube
+          id={youtubeId}
+          style={{
+            maxWidth: "min(100%, 30rem)",
+          }}
+        />
+      )}
       {content.blurb && <Markdown className="md">{content.blurb}</Markdown>}
       {githubLink && (
         <p>

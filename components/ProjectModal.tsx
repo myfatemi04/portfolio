@@ -7,17 +7,7 @@ export default function ProjectModal({ project }: { project: ProjectProps }) {
   const toggle = useCallback(() => setOpen((open) => !open), []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "white",
-        width: "30rem",
-        margin: "0.5rem 0",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-      }}
-    >
+    <div>
       <button
         onClick={toggle}
         style={{
