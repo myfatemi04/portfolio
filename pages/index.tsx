@@ -47,7 +47,6 @@ export default function MainPage({ projects }: { projects: ProjectProps[] }) {
         style={{
           padding: "1rem",
           color: "black",
-          maxWidth: "30rem",
         }}
       >
         <SocialGood />
