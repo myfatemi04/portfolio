@@ -42,6 +42,7 @@ export default function ProjectModal({ project }: { project: ProjectProps }) {
             flexDirection: "column",
             alignItems: "center",
           }}
+          onClick={toggle}
         >
           {/* Modal whitebox */}
           <div
@@ -58,6 +59,7 @@ export default function ProjectModal({ project }: { project: ProjectProps }) {
               borderRadius: "1rem",
               boxShadow: "0.25rem 0.25rem 0.125rem rgba(100, 100, 100, 0.5)",
             }}
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button
