@@ -33,7 +33,7 @@ export default function MainPage({ projects }: { projects: ProjectProps[] }) {
         Fatemi
       </h1>
       <img
-        src="/images/rock.jpg"
+        src="/images/rock_centered.jpg"
         style={{
           borderRadius: "100%",
           width: profilePhotoSize,
