@@ -1,12 +1,12 @@
 import { GetStaticProps } from "next";
 import React from "react";
-import getProjectMetadata from "../../lib/getProjectMetadata";
+import getProjects from "../../lib/getProjects";
 import Project, { ProjectProps } from "./[id]";
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   return {
     props: {
-      projects: await getProjectMetadata(),
+      projects: await getProjects(),
     },
   };
 };
@@ -28,7 +28,8 @@ export default function Projects({ projects }: { projects: ProjectProps[] }) {
           alignItems: "center",
           borderRadius: "1rem",
           backgroundColor: "white",
-          width: "30rem",
+          minWidth: "30rem",
+          maxWidth: "60rem",
           padding: "1rem 2rem",
           minHeight: "100vh",
           boxSizing: "border-box",

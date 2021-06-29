@@ -1,13 +1,9 @@
 import { ProjectProps } from "../pages/projects/[id]";
 import Youtube from "./Youtube";
+import Markdown from "react-markdown";
 
-export default function Project({
-  id,
-  name,
-  githubLink,
-  images,
-  youtubeId,
-}: ProjectProps) {
+export default function Project({ metadata, content }: ProjectProps) {
+  const { name, youtubeId, githubLink } = metadata;
   return (
     <div
       style={{
@@ -17,7 +13,14 @@ export default function Project({
       }}
     >
       <h2>{name}</h2>
-      {youtubeId && <Youtube id={youtubeId} />}
+      {githubLink && (
+        <p>
+          Interested in the code? Check it out on{" "}
+          <a href="https://www.github.com/myfatemi04/eyeos">GitHub</a>!
+        </p>
+      )}
+      {youtubeId && <Youtube id={youtubeId} style={{ maxWidth: "30rem" }} />}
+      <Markdown>{content}</Markdown>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ProjectProps } from "../pages/projects/[id]";
 
 export default function ProjectTile({ project }: { project: ProjectProps }) {
-  const { id, name, githubLink, liveLink } = project;
+  const { id, name, githubLink, liveLink } = project.metadata;
   return (
     <div
       style={{

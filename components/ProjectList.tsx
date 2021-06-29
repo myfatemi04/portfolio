@@ -15,7 +15,7 @@ export default function ProjectList({
       }}
     >
       {projects.map((project) => (
-        <ProjectTile project={project} key={project.id} />
+        <ProjectTile project={project} key={project.metadata.id} />
       ))}
     </div>
   );

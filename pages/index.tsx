@@ -1,15 +1,11 @@
-import Image from "next/image";
-
-import Footer from "../components/Footer";
 import Profile from "../components/Profile";
-import ProjectList from "../components/ProjectList";
-import getProjectMetadata from "../lib/getProjectMetadata";
+import getProjects from "../lib/getProjects";
 import { ProjectProps } from "./projects/[id]";
 
 export async function getStaticProps() {
   return {
     props: {
-      projects: await getProjectMetadata(),
+      projects: await getProjects(),
     },
   };
 }

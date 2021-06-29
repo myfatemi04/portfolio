@@ -8,13 +8,18 @@ export interface Image {
 
 type ImageColumn = Image[];
 
-export interface ProjectProps {
+export interface ProjectMetadata {
   id: string;
   name: string;
   youtubeId?: string;
   githubLink?: string;
   liveLink?: string;
   images: ImageColumn[];
+}
+
+export interface ProjectProps {
+  metadata: ProjectMetadata;
+  content: string;
 }
 
 export { default } from "../../components/Project";
