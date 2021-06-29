@@ -1,0 +1,32 @@
+{
+  "id": "eyeos",
+  "name": "EyeOS",
+  "githubLink": "https://www.github.com/myfatemi04/EyeOS",
+  "youtubeId": "PvBQVCoy1MQ",
+  "images": [
+    [
+      {
+        "file": "/img/projects/2020/eyeos/Camera.png",
+        "alt": "Webcam view, showing positions of pupils"
+      }
+    ],
+    [
+      {
+        "file": "/img/projects/2020/eyeos/App-MainPage.png",
+        "alt": "UI Main Page (UI by Autin Mitra)"
+      }
+    ],
+    [
+      {
+        "file": "/img/projects/2020/eyeos/App-Settings.png",
+        "alt": "UI Settings (UI by Autin Mitra)"
+      }
+    ],
+    [
+      {
+        "file": "/img/projects/2020/eyeos/App-AppLauncher.png",
+        "alt": "UI App Launcher (UI by Autin Mitra)"
+      }
+    ]
+  ]
+}
