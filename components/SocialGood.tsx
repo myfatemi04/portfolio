@@ -7,11 +7,6 @@ export default function SocialGood() {
         other people as possible to do so as well.
       </p>
       <p>
-        <b>I want to build something that changes the world.</b> I'm practicing
-        Machine Learning, App Development, and engineering, because I love doing
-        them and feel like they have a great future.
-      </p>
-      <p>
         <b>I've been coding since 2013.</b> When I was admitted to the Thomas
         Jefferson High School for Science and Technology, I took a test to
         qualify to take AP Computer Science with Data Structures as a freshman.
