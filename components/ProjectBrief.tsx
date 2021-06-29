@@ -1,6 +1,8 @@
+import Link from "next/link";
+import React from "react";
+import Markdown from "react-markdown";
 import { ProjectProps } from "../pages/projects/[id]";
 import Youtube from "./Youtube";
-import Markdown from "react-markdown";
 
 export default function Project({ metadata, content }: ProjectProps) {
   const { name, youtubeId, githubLink } = metadata;
@@ -12,7 +14,9 @@ export default function Project({ metadata, content }: ProjectProps) {
         width: "100%",
       }}
     >
-      <h2>{name}</h2>
+      <h1>{name}</h1>
+      {content.blurb && <Markdown>{content.blurb}</Markdown>}
+      <Link href={`/projects/${metadata.id}`}>Read more</Link>
       {githubLink && (
         <p>
           Interested in the code? Check it out on{" "}
@@ -20,7 +24,6 @@ export default function Project({ metadata, content }: ProjectProps) {
         </p>
       )}
       {youtubeId && <Youtube id={youtubeId} style={{ maxWidth: "30rem" }} />}
-      <Markdown>{content}</Markdown>
     </div>
   );
 }

@@ -1,7 +1,9 @@
 import { GetStaticProps } from "next";
 import React from "react";
+import ProjectBrief from "../../components/ProjectBrief";
+import Whitebox from "../../components/Whitebox";
 import getProjects from "../../lib/getProjects";
-import Project, { ProjectProps } from "./[id]";
+import { ProjectProps } from "./[id]";
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   return {
@@ -13,33 +15,11 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
 export default function Projects({ projects }: { projects: ProjectProps[] }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        padding: "1rem",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          borderRadius: "1rem",
-          backgroundColor: "white",
-          minWidth: "30rem",
-          maxWidth: "60rem",
-          padding: "1rem 2rem",
-          minHeight: "100vh",
-          boxSizing: "border-box",
-        }}
-      >
-        <h1>Projects</h1>
-        {projects.map((project) => (
-          <Project {...project} />
-        ))}
-      </div>
-    </div>
+    <Whitebox>
+      <h1>Projects</h1>
+      {projects.map((project) => (
+        <ProjectBrief {...project} />
+      ))}
+    </Whitebox>
   );
 }

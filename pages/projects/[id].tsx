@@ -1,4 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import React from "react";
+import ProjectDetailed from "../../components/ProjectDetailed";
+import Whitebox from "../../components/Whitebox";
 import getProjectNames from "../../lib/getProjectNames";
 
 export interface Image {
@@ -19,10 +22,19 @@ export interface ProjectMetadata {
 
 export interface ProjectProps {
   metadata: ProjectMetadata;
-  content: string;
+  content: {
+    content: string;
+    blurb?: string;
+  };
 }
 
-export { default } from "../../components/Project";
+export default function ProjectPage(props: ProjectProps) {
+  return (
+    <Whitebox>
+      <ProjectDetailed {...props} />
+    </Whitebox>
+  );
+}
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
   return {
@@ -31,20 +43,13 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const id = context.params!.id;
-  const fs = await import("fs/promises");
-  const filename = `projects/${id}/meta.json`;
-  try {
-    const stat = await fs.stat(filename);
-    if (stat.isFile()) {
-      const text = await fs.readFile(filename, { encoding: "utf-8" });
-      return {
-        props: JSON.parse(text),
-      };
-    }
-  } catch (e) {}
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const params = ctx.params!;
+  const id = params.id as string;
+
+  const parseProject = (await import("../../lib/parseProject")).parseProject;
+
   return {
-    notFound: true,
+    props: await parseProject(id),
   };
 };

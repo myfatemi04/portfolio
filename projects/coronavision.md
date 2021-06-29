@@ -27,6 +27,17 @@ images:
 blurb: "<h1></h1>"
 ---
 
+/section blurb
+
+A robust and feature-filled Coronavirus tracker which pooled data from
+dozens of sources and created detailed data visualations.
+
+I maintained the website for two months before I ran out of free credits
+on Google Cloud. ($120 was on a single bill for producing too many logs.
+A costly mistake...)
+
+/section content
+
 # What is Coronavision?
 
 This app was intended to help people track the spread of the coronavirus and visualize its spread using graphs and animated heatmaps. I wrote this in 10th grade, with some help from some of my friends.
