@@ -2,6 +2,7 @@ import React from "react";
 import Youtube from "./Youtube";
 import Markdown from "react-markdown";
 import { ProjectProps } from "../pages/projects/[id]";
+import Router from "next/router";
 
 export default function ProjectDetailed({ metadata, content }: ProjectProps) {
   const { name, youtubeId, githubLink } = metadata;
@@ -13,6 +14,20 @@ export default function ProjectDetailed({ metadata, content }: ProjectProps) {
         width: "100%",
       }}
     >
+      <div>
+        <button
+          style={{
+            border: "none",
+            padding: "0.5rem",
+            fontSize: "1rem",
+            borderRadius: "0.25rem",
+            cursor: "pointer",
+          }}
+          onClick={Router.back}
+        >
+          Back
+        </button>
+      </div>
       <h1>{name}</h1>
       {content.blurb && <Markdown>{content.blurb}</Markdown>}
       {githubLink && (
