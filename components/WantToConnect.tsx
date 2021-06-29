@@ -3,10 +3,7 @@ export default function WantToConnect() {
     <>
       <em>Want to connect?</em>
       <p>
-        I'm on{" "}
-        <a href="https://www.linkedin.com/in/michael-fatemi-a38bb61a5/">
-          LinkedIn
-        </a>{" "}
+        I'm on <a href="https://www.linkedin.com/in/michaelfatemi">LinkedIn</a>{" "}
         and <a href="https://www.github.com/myfatemi04">GitHub</a>!
       </p>
     </>
