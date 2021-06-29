@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import More from "./More";
 import Projects from "./Projects";
@@ -51,7 +52,8 @@ export default function Profile() {
       >
         <SocialGood />
         <WantToConnect />
-        <Projects />
+        <Link href="/projects">Projects</Link>
+        {/* <Projects /> */}
         <More />
       </div>
     </div>

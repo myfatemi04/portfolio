@@ -11,7 +11,7 @@ type ImageColumn = Image[];
 export interface ProjectProps {
   id: string;
   name: string;
-  youtubeLink?: string;
+  youtubeId?: string;
   githubLink?: string;
   liveLink?: string;
   images: ImageColumn[];

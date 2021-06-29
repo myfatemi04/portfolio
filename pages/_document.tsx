@@ -6,7 +6,6 @@ import Document, {
   DocumentContext,
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import Navbar from "../components/Navbar";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

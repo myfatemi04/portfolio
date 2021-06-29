@@ -8,8 +8,8 @@ export default function SocialGood() {
       </p>
       <p>
         <b>I want to build something that changes the world.</b> I'm practicing
-        Machine Learning, App Development, and even some engineering, because I
-        want to develop skills that enable me to make a difference in the world.
+        Machine Learning, App Development, and engineering, because I love doing
+        them and feel like they have a great future.
       </p>
       <p>
         <b>I've been coding since 2013.</b> When I was admitted to the Thomas
