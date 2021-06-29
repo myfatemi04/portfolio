@@ -2,7 +2,7 @@ import graymatter from "gray-matter";
 import { ProjectMetadata, ProjectProps } from "../pages/projects/[id]";
 import splitContent from "./splitContent";
 
-export async function parseProject(id: string) {
+export default async function parseProject(id: string) {
   const fs = await import("fs/promises");
   const text = await fs.readFile(`projects/${id}.md`, {
     encoding: "utf-8",

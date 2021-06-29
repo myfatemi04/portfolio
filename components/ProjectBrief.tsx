@@ -14,7 +14,7 @@ export default function Project({ metadata, content }: ProjectProps) {
         width: "100%",
       }}
     >
-      <h1>{name}</h1>
+      <h2>{name}</h2>
       {content.blurb && <Markdown>{content.blurb}</Markdown>}
       <Link href={`/projects/${metadata.id}`}>Read more</Link>
       {githubLink && (

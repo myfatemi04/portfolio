@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const params = ctx.params!;
   const id = params.id as string;
 
-  const parseProject = (await import("../../lib/parseProject")).parseProject;
+  const parseProject = (await import("../../lib/parseProject")).default;
 
   return {
     props: await parseProject(id),
