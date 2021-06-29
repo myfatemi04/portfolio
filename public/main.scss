@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+}
+
 .gradient-old {
   background: rgb(55, 0, 255);
   background: linear-gradient(
@@ -26,6 +39,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
+
+  .modal-open {
+    overflow-y: hidden;
+  }
 }
 
 a,
@@ -39,4 +56,10 @@ a:visited {
   h3 {
     margin-block-end: 0;
   }
+}
+
+$modal-z-index: 1;
+
+.modal {
+  z-index: $modal-z-index;
 }

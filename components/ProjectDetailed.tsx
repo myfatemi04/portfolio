@@ -8,7 +8,7 @@ export default function ProjectDetailed({ metadata, content }: ProjectProps) {
   const { name, youtubeId, githubLink } = metadata;
   return (
     <div>
-      <button
+      {/* <button
         style={{
           border: "none",
           padding: "0.5rem",
@@ -19,7 +19,7 @@ export default function ProjectDetailed({ metadata, content }: ProjectProps) {
         onClick={Router.back}
       >
         Back
-      </button>
+      </button> */}
       <h1>{name}</h1>
       {content.blurb && <Markdown className="md">{content.blurb}</Markdown>}
       {githubLink && (
