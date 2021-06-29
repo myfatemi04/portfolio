@@ -21,7 +21,7 @@ export default function ProjectDetailed({ metadata, content }: ProjectProps) {
         Back
       </button>
       <h1>{name}</h1>
-      {content.blurb && <Markdown>{content.blurb}</Markdown>}
+      {content.blurb && <Markdown className="md">{content.blurb}</Markdown>}
       {githubLink && (
         <p>
           Interested in the code? Check it out on{" "}

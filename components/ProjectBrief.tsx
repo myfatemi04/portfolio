@@ -15,7 +15,8 @@ export default function Project({ metadata, content }: ProjectProps) {
       }}
     >
       <h2>{name}</h2>
-      {content.blurb && <Markdown>{content.blurb}</Markdown>}
+      {youtubeId && <Youtube id={youtubeId} style={{ maxWidth: "30rem" }} />}
+      {content.blurb && <Markdown className="md">{content.blurb}</Markdown>}
       <Link href={`/projects/${metadata.id}`}>Read more</Link>
       {githubLink && (
         <p>
@@ -23,7 +24,6 @@ export default function Project({ metadata, content }: ProjectProps) {
           <a href="https://www.github.com/myfatemi04/eyeos">GitHub</a>!
         </p>
       )}
-      {youtubeId && <Youtube id={youtubeId} style={{ maxWidth: "30rem" }} />}
     </div>
   );
 }
