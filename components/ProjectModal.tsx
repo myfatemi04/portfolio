@@ -40,13 +40,14 @@ export default function ProjectModal({ project }: { project: ProjectProps }) {
               display: "flex",
               flexDirection: "column",
 
-              padding: "1rem",
+              padding: "1rem 3rem",
 
               maxWidth: "min(calc(100vw - 2rem), 60rem)",
               maxHeight: "100%",
 
-              backgroundColor: "white",
+              border: "1px solid lightgrey",
               borderRadius: "1rem",
+              backgroundColor: "white",
               boxShadow: "0.25rem 0.25rem 0.125rem rgba(100, 100, 100, 0.5)",
             }}
             onClick={(e) => e.stopPropagation()}

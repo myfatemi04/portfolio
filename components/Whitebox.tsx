@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-const sidePadding = "2rem";
+const sidePadding = "3rem";
 const absoluteMinWidth = `calc(100vw - 2 * ${sidePadding})`;
 const minWidth = `min(${absoluteMinWidth}, 30rem)`;
 const maxWidth = `min(${absoluteMinWidth}, 60rem)`;
