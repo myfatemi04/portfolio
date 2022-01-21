@@ -1,4 +1,4 @@
-let projectNames: string[] = null!;
+let projectNames: string[] = ["wheelshare", "eyeos", "coronavision"];
 
 export default async function getProjectNames() {
   if (projectNames === null) {

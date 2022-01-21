@@ -42,7 +42,6 @@ export default function MainPage({ projects }: { projects: ProjectProps[] }) {
           padding: "1rem",
         }}
       />
-      {/*<em>Wow, it's me!</em>*/}
       <div>
         <SocialGood />
         <WantToConnect />
