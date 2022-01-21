@@ -26,8 +26,7 @@ export default function Project({ metadata, content }: ProjectProps) {
       {content.blurb && <Markdown className="md">{content.blurb}</Markdown>}
       {githubLink && (
         <p>
-          Interested in the code? Check it out on{" "}
-          <a href={githubLink}>GitHub</a>!
+          This project is <a href={githubLink}>open-source</a>.
         </p>
       )}
       <ProjectModal project={{ metadata, content }} />
