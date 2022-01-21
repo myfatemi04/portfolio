@@ -27,7 +27,7 @@ export default function Project({ metadata, content }: ProjectProps) {
       {githubLink && (
         <p>
           Interested in the code? Check it out on{" "}
-          <a href="https://www.github.com/myfatemi04/eyeos">GitHub</a>!
+          <a href={githubLink}>GitHub</a>!
         </p>
       )}
       <ProjectModal project={{ metadata, content }} />
