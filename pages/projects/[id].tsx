@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import ProjectDetailed from "../../components/ProjectDetailed";
-import Whitebox from "../../components/Whitebox";
+import Container from "../../components/Container";
 import getProjectNames from "../../lib/getProjectNames";
 
 export interface Image {
@@ -30,9 +30,9 @@ export interface ProjectProps {
 
 export default function ProjectPage(props: ProjectProps) {
   return (
-    <Whitebox>
+    <Container>
       <ProjectDetailed {...props} />
-    </Whitebox>
+    </Container>
   );
 }
 

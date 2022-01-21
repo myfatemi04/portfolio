@@ -1,11 +1,8 @@
 export default function SocialGood() {
   return (
     <>
-      <h1>Technology for social good</h1>
-      <p>
-        I want to create, explore, and connect, and make it possible for as many
-        other people as possible to do so as well.
-      </p>
+      <h1>Michael Fatemi</h1>
+      <p>I'm a student, programmer, and app developer.</p>
       <p>
         <b>I've been coding since 2013.</b> When I was admitted to the Thomas
         Jefferson High School for Science and Technology, I took a test to

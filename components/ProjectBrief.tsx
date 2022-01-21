@@ -19,7 +19,7 @@ export default function Project({ metadata, content }: ProjectProps) {
         <Youtube
           id={youtubeId}
           style={{
-            maxWidth: "min(100%, 30rem)",
+            maxWidth: "min(100%, 20rem)",
           }}
         />
       )}
