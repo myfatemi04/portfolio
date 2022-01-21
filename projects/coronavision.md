@@ -24,7 +24,6 @@ images:
       alt: Choropleth map at the county level
     - file: "/img/projects/2020/coronavision/Maps-ChooseFeature.png"
       alt: Maps were very flexible
-blurb: "<h1></h1>"
 ---
 
 /section blurb
