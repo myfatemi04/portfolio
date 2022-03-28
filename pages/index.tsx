@@ -36,8 +36,8 @@ export default function About() {
             student government, varsity track, and the Rubik's Cube Club. I'm
             currently working on a research project to locate and classify
             sounds and display them in augmented reality. I have taken courses
-            in computer vision, artificial intelligence, mobile and web app
-            development, and machine learning.
+            in computer vision, artificial intelligence, and mobile and web app
+            development.
           </p>
           <p>
             I build apps like{" "}
@@ -54,6 +54,20 @@ export default function About() {
             , a website with maps, charts, and predictions for COVID-19 cases.
             All of these are open source! Check out my{" "}
             <a href="http://github.com/myfatemi04/">Github</a>.
+          </p>
+          <p>
+            From June 2021 to August 2021, I worked as a research intern for Dr.
+            Ei Brown at the <a href="http://arl.army.mil">Army Research Lab</a>{" "}
+            in Adelphi, Maryland. My primary research goal was to measure the
+            efficiency of various laser crystals by detecting the amount and
+            wavelengths of emitted light from each crystal. I wrote Python
+            programs to automatically detect the decay time of an emitted signal
+            and decompose a single decay signal into various component decay
+            signals. I also wrote a Java program to interface directly with the
+            drivers for a lab spectrometer, setting up a server that piped
+            real-time detection events to clients, performed data
+            transformations such as noise reduction and signal peak
+            identification, and visualized the results in a dashboard.
           </p>
           <p>
             From April 2020 to April 2021, I was a founding member and the
