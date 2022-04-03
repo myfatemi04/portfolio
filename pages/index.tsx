@@ -27,7 +27,7 @@ export default function About() {
         <Right />
         <div style={{ float: "left", width: "60%" }}>
           <p>
-            I'm <strong>Michael Fatemi,</strong> a app developer and machine
+            I'm <strong>Michael Fatemi,</strong> an app developer and machine
             learning enthusiast.
           </p>
           <p>
