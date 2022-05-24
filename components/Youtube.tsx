@@ -14,7 +14,7 @@ export default function Youtube({
 }) {
   return (
     <iframe
-      src={`https://www.youtube.com/embed/${id}`}
+      src={`https://www.youtube.com/embed/${id}?autoplay=1&mute=1`}
       style={style ? { ...baseStyle, ...style } : baseStyle}
     />
   );

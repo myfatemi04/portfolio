@@ -1,9 +1,10 @@
 import React from "react";
 import Container from "../components/Container";
+import Youtube from "../components/Youtube";
 
 function Right() {
   return (
-    <div style={{ float: "right", width: "35%" }}>
+    <div style={{ float: "right", width: "30%" }}>
       <img
         src="/images/rock_centered.jpg"
         alt="Me, sitting on a rock."
@@ -19,42 +20,132 @@ function Right() {
   );
 }
 
+function OtherThingsAboutMe() {
+  return (
+    <>
+      <h1>Other Things About Me</h1>
+      <div className="project-card">
+        <h2>Rubik's Cube Club - President</h2>
+        <img
+          src="/images/rubiks_team_2019.jpg"
+          alt="Rubik's Team 2019"
+          width="100%"
+        />
+        <em>
+          This photo is from 2019, when our team of eight won fastest in the
+          nation for solving 25 Rubik's Cubes in 45 seconds!
+        </em>
+      </div>
+      <div className="project-card">
+        <h2>Varsity Track - Middle Distance Co-Captain</h2>
+        <img src="/images/track.JPG" alt="Friends from track" width="100%" />
+        <em>
+          Some people from the track team and I, after going to regionals in
+          Spring of 2021.
+        </em>
+      </div>
+    </>
+  );
+}
+
+function CoolThingsIveMade() {
+  return (
+    <>
+      {" "}
+      <h1>Cool Things I've Made</h1>
+      <div className="project-card">
+        <h2>Cactus Courseware</h2>
+        <Youtube
+          id="JICyJuVcmh0"
+          style={{ width: "100%", aspectRatio: "1920/1080" }}
+        />
+        <br />
+        This is an open-source educational content website. Educational content
+        can be imported from GitHub and is updated automatically whenever
+        contributors make changes. It includes animations and interactive
+        content to cater to different learning styles. Uses React and Express as
+        its frontend and backend frameworks, and MongoDB for data persistence.{" "}
+        <br />
+        <a href="http://github.com/myfatemi04/cactus-courseware-frontend">
+          Frontend
+        </a>
+        <br />
+        <a href="http://github.com/myfatemi04/cactus-courseware-backend">
+          Backend
+        </a>
+      </div>
+      <div className="project-card">
+        <h2>StreetSweep</h2>
+        <Youtube
+          id="RMDFT7telOo"
+          style={{ width: "100%", aspectRatio: "1920/1080" }}
+        />
+        StreetSweep uses class-agnostic object detection with a model adapted
+        from a ResNet classifier to automatically detect garbage in photos of
+        street litter. Designed to help policymakers and volunteer organizations
+        by creating a heatmap of the prevalence and type of trash at each
+        location. <br />
+        <a href="http://github.com/myfatemi04/streetsweep-frontend">Frontend</a>
+        <br />
+        <a href="http://github.com/myfatemi04/streetsweep">Backend</a>
+      </div>
+      {/* <div className="project-card">
+    <h2>WheelShare</h2>
+    <Youtube
+      id="xQIsbsgVpas"
+      style={{ width: "100%", aspectRatio: "1920/1080" }}
+    />
+  </div> */}
+      <div className="project-card">
+        <h2>EyeOS</h2>
+        <Youtube
+          id="PvBQVCoy1MQ"
+          style={{ width: "100%", aspectRatio: "1920/1280" }}
+        />
+        An app that enables the disabled to control their computer mouse with
+        their eyes: after a quick calibration step, the computer would detect
+        which section of the screen they were looking at with 90% accuracy and
+        move the mouse there. Then, via voice recognition provided by Google
+        Cloud, they could click on those parts of the screen, type, search the
+        web, and perform other tasks. Won 1st Place at the HooHacks 2020
+        Hackathon, an official hackathon organized by students at the University
+        of Virginia. Utilized Haar cascades, DLib facial recognition, a custom
+        iris detection algorithm made with OpenCV, and voice recognition from
+        Google Cloud.
+        <br />
+        <a href="http://github.com/myfatemi04/eyeos">Code</a>
+      </div>
+      {/* <div className="project-card">
+    <h2>Coronavision</h2>
+  </div> */}
+    </>
+  );
+}
+
 export default function About() {
   return (
     <Container>
       <h1>Hey, I'm Michael! 👋</h1>
       <section>
         <Right />
-        <div style={{ float: "left", width: "60%" }}>
+        <div style={{ float: "left", width: "70%" }}>
           <p>
             I'm <strong>Michael Fatemi,</strong> an app developer and machine
             learning enthusiast.
           </p>
+          <a href="http://github.com/myfatemi04">GitHub</a>
+          <h1>Education</h1>
+          <b>University of Virginia</b>
+          <p>BS Computer Science, 2026</p>
+          <b>Thomas Jefferson High School for Science and Technology</b>
           <p>
-            I'm a student at the Thomas Jefferson High School for Science and
-            Technology, where I'm an active member of the machine learning club,
-            student government, varsity track, and the Rubik's Cube Club. I'm
-            currently working on a research project to locate and classify
-            sounds and display them in augmented reality. I have taken courses
-            in computer vision, artificial intelligence, and mobile and web app
-            development.
+            Courses: Artificial Intelligence, Computer Vision, Mobile and Web
+            App Development, Data Structures
           </p>
-          <p>
-            I build apps like{" "}
-            <a href="https://github.com/myfatemi04/wheelshare-frontend">
-              WheelShare
-            </a>
-            , a carpool discovery app for my school,{" "}
-            <a href="https://www.youtube.com/watch?v=PvBQVCoy1MQ">EyeOS</a>, an
-            app that makes it possible to control a computer through eye
-            movements, and{" "}
-            <a href="https://github.com/myfatemi04/corona-vision">
-              Coronavision
-            </a>
-            , a website with maps, charts, and predictions for COVID-19 cases.
-            All of these are open source! Check out my{" "}
-            <a href="http://github.com/myfatemi04/">Github</a>.
-          </p>
+
+          <CoolThingsIveMade />
+
+          <h1>Work Experience</h1>
           <p>
             From June 2021 to August 2021, I worked as a research intern for Dr.
             Ei Brown at the <a href="http://arl.army.mil">Army Research Lab</a>{" "}
@@ -69,6 +160,8 @@ export default function About() {
             transformations such as noise reduction and signal peak
             identification, and visualized the results in a dashboard.
           </p>
+
+          <h1>Volunteer Work</h1>
           <p>
             From April 2020 to April 2021, I was a founding member and the
             director of events at <a href="https://codefycs.org/">Codefy</a>, a
@@ -86,10 +179,13 @@ export default function About() {
             </a>
             . I also help organize events.
           </p>
+
+          <OtherThingsAboutMe />
+
+          <h1>Contact Me</h1>
           <p>
-            If you want to talk more, email me at 2022mfatemi [at] tjhsst.edu or
-            send me a message on{" "}
-            <a href="https://www.linkedin.com/in/michaelfatemi">my LinkedIn</a>!
+            Please send me an email at gsk6me [at] virginia.edu, or message me
+            on <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>.
           </p>
         </div>
       </section>

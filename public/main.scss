@@ -64,3 +64,17 @@ $modal-z-index: 1;
 .modal {
   z-index: $modal-z-index;
 }
+
+.project-card {
+  background-color: #303030;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  margin-bottom: 0.5rem;
+
+  a,
+  a:visited {
+    color: white;
+  }
+}
