@@ -139,6 +139,7 @@ export default function About() {
           <a href="https://www.youtube.com/channel/UC0CG_oek4RpaqqJlJlFHSKQ">
             YouTube
           </a>
+          <br />
           <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
           <h1>Education</h1>
           <b>University of Virginia</b>
