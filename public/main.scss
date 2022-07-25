@@ -65,9 +65,19 @@ $modal-z-index: 1;
   z-index: $modal-z-index;
 }
 
-.project-quadrant {
-  width: 50%;
-  height: 50%;
+.project-grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(max(calc(100% / 2 - 20px), 720px), 1fr)
+  );
+  grid-gap: 20px;
+
+  .project-quadrant {
+    box-sizing: border-box;
+    line-height: 1.5;
+  }
 }
 
 .project-row {
@@ -144,19 +154,19 @@ $modal-z-index: 1;
       font-size: 5rem;
       margin-bottom: 0.5rem;
     }
+  }
+}
 
-    .link-row {
-      display: flex;
-      margin-bottom: 1rem;
+.link-row {
+  display: flex;
+  margin-bottom: 1rem;
 
-      a {
-        margin-right: 0.5rem;
-        color: white;
+  a {
+    margin-right: 0.5rem;
+    color: white;
 
-        &:visited {
-          color: white;
-        }
-      }
+    &:visited {
+      color: white;
     }
   }
 }

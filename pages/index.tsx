@@ -3,122 +3,153 @@ import Youtube from "../components/Youtube";
 
 function OtherThingsAboutMe() {
   return (
-    <>
+    <div
+      style={{
+        padding: "4rem",
+        // backgroundColor: "rgb(32, 32, 32)",
+        // color: "white",
+      }}
+    >
       <h1>Other Things About Me</h1>
-      <div className="project-card">
-        <h2>Rubik's Cube Club - President</h2>
-        <img
-          src="/images/rubiks_team_2019.jpg"
-          alt="Rubik's Team 2019"
-          width="100%"
-        />
-        <em>
-          This photo is from 2019, when our team of eight won fastest in the
-          nation for solving 25 Rubik's Cubes in 45 seconds!
-        </em>
+      <div className="project-row">
+        <div className="image">
+          <img src="/images/rubiks_team_2019.jpg" alt="Rubik's Team 2019" />
+        </div>
+        <div className="content">
+          <h2>TJ Rubik's Cube Club - President</h2>
+          <p>
+            This photo is from 2019. We had a lot of fast people in our year,
+            and our team of eight won fastest in the nation for solving 25
+            Rubik's Cubes in 45 seconds!
+          </p>
+        </div>
       </div>
-      <div className="project-card">
-        <h2>Varsity Track - Middle Distance Co-Captain</h2>
-        <img src="/images/track.JPG" alt="Friends from track" width="100%" />
-        <em>
-          Some people from the track team and I, after going to regionals in
-          Spring of 2021.
-        </em>
+      <div className="project-row">
+        <div className="image">
+          <img src="/images/track.JPG" alt="Friends from track" />
+        </div>
+        <div className="content">
+          <h2>Varsity Track - Middle Distance Co-Captain</h2>
+          <p>
+            Some people from the track team and I, after going to regionals in
+            Spring of 2021.
+          </p>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
 function CoolThingsIveMade() {
   return (
-    <>
-      {" "}
+    <div
+      style={{
+        backgroundColor: "rgb(32, 32, 32)",
+        color: "white",
+        padding: "4rem",
+        width: "100%",
+      }}
+    >
       <h1>Cool Things I've Made</h1>
-      <div className="project-card">
-        <h2>Cactus Courseware</h2>
-        <Youtube
-          id="JICyJuVcmh0"
-          style={{ width: "100%", aspectRatio: "1920/1080" }}
-        />
-        <br />
-        This is an open-source educational content website that my friends and I
-        built. Educational content can be imported from GitHub and is updated
-        automatically whenever contributors make changes. It includes animations
-        and interactive content to cater to different learning styles. Uses
-        React and Express as its frontend and backend frameworks, and MongoDB
-        for data persistence. <br />
-        <a href="http://github.com/myfatemi04/cactus-courseware-frontend">
-          Frontend
-        </a>
-        <br />
-        <a href="http://github.com/myfatemi04/cactus-courseware-backend">
-          Backend
-        </a>
+      <div className="project-grid">
+        {/* CCW */}
+        <div className="project-quadrant">
+          <h2>Cactus Courseware</h2>
+          <Youtube
+            id="JICyJuVcmh0"
+            style={{ width: "100%", aspectRatio: "1920/1080" }}
+          />
+          <br />
+          This is an open-source educational content website that my friends and
+          I built. Educational content can be imported from GitHub and is
+          updated automatically whenever contributors make changes. It includes
+          animations and interactive content to cater to different learning
+          styles. Uses React and Express as its frontend and backend frameworks,
+          and MongoDB for data persistence. <br />
+          <div className="link-row">
+            <a href="http://github.com/myfatemi04/cactus-courseware-frontend">
+              Frontend
+            </a>
+            <a href="http://github.com/myfatemi04/cactus-courseware-backend">
+              Backend
+            </a>
+          </div>
+        </div>
+        {/* StreetSweep */}
+        <div className="project-quadrant">
+          <h2>StreetSweep</h2>
+          <Youtube
+            id="RMDFT7telOo"
+            style={{ width: "100%", aspectRatio: "1920/1080" }}
+          />
+          StreetSweep is an app that my friend and I created for a hackathon
+          with the goal of helping policymakers and volunteer organizations by
+          creating a heatmap of the prevalence and type of trash at each
+          location. It uses class-agnostic object detection with a model adapted
+          from a ResNet classifier to automatically detect garbage in photos of
+          street litter. <br />
+          <div className="link-row">
+            <a href="http://github.com/myfatemi04/streetsweep-frontend">
+              Frontend
+            </a>
+            <a href="http://github.com/myfatemi04/streetsweep">Backend</a>
+          </div>
+        </div>
+        {/* WheelShare */}
+        <div className="project-quadrant">
+          <h2>WheelShare</h2>
+          <Youtube
+            id="xQIsbsgVpas"
+            style={{ width: "100%", aspectRatio: "1920/1080" }}
+          />
+        </div>
+        {/* EyeOS */}
+        <div className="project-quadrant">
+          <h2>EyeOS</h2>
+          <Youtube
+            id="PvBQVCoy1MQ"
+            style={{ width: "100%", aspectRatio: "1920/1280" }}
+          />
+          An app that enables the disabled to control their computer mouse with
+          their eyes: after a quick calibration step, the computer would detect
+          which section of the screen they were looking at with 90% accuracy and
+          move the mouse there. Then, via voice recognition provided by Google
+          Cloud, they could click on those parts of the screen, type, search the
+          web, and perform other tasks. Won 1st Place at the HooHacks 2020
+          Hackathon, an official hackathon organized by students at the
+          University of Virginia. Utilized Haar cascades, DLib facial
+          recognition, a custom iris detection algorithm made with OpenCV, and
+          voice recognition from Google Cloud.
+          <br />
+          <div className="link-row">
+            <a href="http://github.com/myfatemi04/eyeos">Code</a>
+          </div>
+        </div>
       </div>
-      <div className="project-card">
-        <h2>StreetSweep</h2>
-        <Youtube
-          id="RMDFT7telOo"
-          style={{ width: "100%", aspectRatio: "1920/1080" }}
-        />
-        StreetSweep is an app that my friend and I created for a hackathon with
-        the goal of helping policymakers and volunteer organizations by creating
-        a heatmap of the prevalence and type of trash at each location. It uses
-        class-agnostic object detection with a model adapted from a ResNet
-        classifier to automatically detect garbage in photos of street litter.{" "}
-        <br />
-        <a href="http://github.com/myfatemi04/streetsweep-frontend">Frontend</a>
-        <br />
-        <a href="http://github.com/myfatemi04/streetsweep">Backend</a>
-      </div>
-      {/* <div className="project-card">
-    <h2>WheelShare</h2>
-    <Youtube
-      id="xQIsbsgVpas"
-      style={{ width: "100%", aspectRatio: "1920/1080" }}
-    />
-  </div> */}
-      <div className="project-card">
-        <h2>EyeOS</h2>
-        <Youtube
-          id="PvBQVCoy1MQ"
-          style={{ width: "100%", aspectRatio: "1920/1280" }}
-        />
-        An app that enables the disabled to control their computer mouse with
-        their eyes: after a quick calibration step, the computer would detect
-        which section of the screen they were looking at with 90% accuracy and
-        move the mouse there. Then, via voice recognition provided by Google
-        Cloud, they could click on those parts of the screen, type, search the
-        web, and perform other tasks. Won 1st Place at the HooHacks 2020
-        Hackathon, an official hackathon organized by students at the University
-        of Virginia. Utilized Haar cascades, DLib facial recognition, a custom
-        iris detection algorithm made with OpenCV, and voice recognition from
-        Google Cloud.
-        <br />
-        <a href="http://github.com/myfatemi04/eyeos">Code</a>
-      </div>
-    </>
+    </div>
   );
 }
 
 function Experience() {
   return (
     <div style={{ paddingLeft: "4rem" }}>
-      <h1>What I've Worked On</h1>
+      <h1>Research</h1>
       <div className="project-row">
         <div className="image">
           <img src="/images/visium_small.png" alt="Visium" />
         </div>
         <div className="content">
-          <h2>Dartmouth Machine Learning Intern</h2>
-          <em>June 2022 &ndash; Present</em>
+          <h2>Spatial Transcriptomics</h2>
+          <em>
+            June 2022 &ndash; Present; with the{" "}
+            <a href="https://jlevy44.github.io/levylab/projects/">Levy Lab</a>{" "}
+            at Dartmouth-Hitchcock Medical Center
+          </em>
           <p>
             I've been developing machine learning models to make predictions of
-            which genes are most responsible for aggressive cancer tumors as
-            part of the{" "}
-            <a href="https://jlevy44.github.io/levylab/projects/">Levy Lab</a>{" "}
-            at the Dartmouth-Hitchcock Medical Center. They may also be useful
-            for determining whether immunotherapy will be effective or not.
+            which genes are most responsible for aggressive cancer tumors. They
+            may also be useful for determining whether immunotherapy will be
+            effective or not.
           </p>
         </div>
       </div>
@@ -188,7 +219,7 @@ function Education() {
 
 function Volunteering() {
   return (
-    <div>
+    <div style={{ padding: "4rem" }}>
       <h1>Volunteering</h1>
       <p>
         From April 2020 to April 2021, I was a founding member and the director
@@ -248,14 +279,23 @@ export default function Main() {
         <MainImage />
         <Education />
         <Experience />
-        <CoolThingsIveMade />
         <Volunteering />
+        <CoolThingsIveMade />
         <OtherThingsAboutMe />
-        <h1>Contact Me</h1>
-        <p>
-          Please send me an email at gsk6me [at] virginia.edu, or message me on{" "}
-          <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>.
-        </p>
+        <div
+          style={{
+            paddingLeft: "4rem",
+            paddingBottom: "4rem",
+            // backgroundColor: "rgb(32, 32, 32)",
+            // color: "white",
+          }}
+        >
+          <h1>Contact Me</h1>
+          <p>
+            Please send me an email at gsk6me [at] virginia.edu, or message me
+            on <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>.
+          </p>
+        </div>
       </Container>
     </>
   );
