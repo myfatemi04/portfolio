@@ -167,25 +167,37 @@ function About() {
     <Container>
       <section>
         <div style={{ margin: "0px auto", width: "70%" }}>
-          <p>
-            I'm Michael Fatemi, an app developer and machine learning
-            enthusiast.
-          </p>
-          <a href="https://github.com/myfatemi04">GitHub</a>
-          <br />
-          <a href="https://www.youtube.com/channel/UC0CG_oek4RpaqqJlJlFHSKQ">
-            YouTube
-          </a>
-          <br />
-          <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
           <h1>Education</h1>
-          <b>University of Virginia</b>
-          <p>BS Computer Science, 2026</p>
-          <b>Thomas Jefferson High School for Science and Technology</b>
-          <p>
-            Courses: Artificial Intelligence, Computer Vision, Mobile and Web
-            App Development, Data Structures
-          </p>
+          <div className="edu-row">
+            <div className="image">
+              <img src="/images/uva_logo.png" alt="University of Virginia" />
+            </div>
+            <div className="content">
+              <b>University of Virginia</b>
+              <p>
+                <em>2022 &ndash; 2026</em>
+                <br />
+                BS Computer Science
+              </p>
+            </div>
+          </div>
+          <div className="edu-row">
+            <div className="image">
+              <img
+                src="/images/TJ_logo.png"
+                alt="Thomas Jefferson High School for Science and Technology"
+              />
+            </div>
+            <div className="content">
+              <b>Thomas Jefferson High School for Science and Technology</b>
+              <p>
+                <em>2018 &ndash; 2022</em>
+                <br />
+                Artificial Intelligence, Computer Vision, Mobile and Web App
+                Development, Data Structures
+              </p>
+            </div>
+          </div>
           <ThingsIveWorkedOn />
           <CoolThingsIveMade />
           <h1>Volunteering</h1>
@@ -226,11 +238,22 @@ export default function Main() {
         <div className="main-card">
           <div style={{ maxWidth: "33vw" }}>
             <h1>Michael Fatemi</h1>
+
             <p style={{ display: "inline-block" }}>
               Hey! I'm Michael Fatemi, a software developer and machine learning
               enthusiast. I'm interested in biotech, robotics, aerospace, and
               quantum computing.
             </p>
+
+            <div className="link-row">
+              <a href="https://github.com/myfatemi04">GitHub</a>
+
+              <a href="https://www.youtube.com/channel/UC0CG_oek4RpaqqJlJlFHSKQ">
+                YouTube
+              </a>
+
+              <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
+            </div>
           </div>
         </div>
       </div>
