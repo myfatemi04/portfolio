@@ -123,16 +123,53 @@ function CoolThingsIveMade() {
   );
 }
 
-export default function About() {
+function ThingsIveWorkedOn() {
+  return (
+    <>
+      <h1>What I've Worked On</h1>
+      <p>
+        <div className="project-card">
+          <h2>Dartmouth Machine Learning Intern</h2>
+          <img src="/images/visium_small.png" alt="Visium" width="50%" />
+          <br />
+          As of June 2022, I've been developing machine learning models to make
+          predictions of which genes are most responsible for aggressive cancer
+          tumors as part of the{" "}
+          <a href="https://jlevy44.github.io/levylab/projects/">Levy Lab</a> at
+          the Dartmouth-Hitchcock Medical Center. They may also be useful for
+          determining whether immunotherapy will be effective or not.
+        </div>
+      </p>
+      <p>
+        <div className="project-card">
+          <h2>Army Research Lab Intern</h2>
+          <img src="/images/lasers.JPG" alt="Lasers!" width="50%" />
+          <br />
+          From June 2021 to August 2021, I worked as a research intern for Dr.
+          Ei Brown at the <a href="http://arl.army.mil">Army Research Lab</a> in
+          Adelphi, Maryland to measure the efficiency of various laser crystals
+          by detecting the amount and wavelengths of emitted light from each
+          crystal. I wrote Python programs to automatically detect the decay
+          time of an emitted signal and decompose a single decay signal into
+          various component decay signals. I also wrote a Java program to
+          interface directly with the drivers for a lab spectrometer, setting up
+          a server that piped real-time detection events to clients, performed
+          data transformations such as noise reduction and signal peak
+          identification, and visualized the results in a dashboard.
+        </div>
+      </p>
+    </>
+  );
+}
+
+function About() {
   return (
     <Container>
-      <h1>Hey, I'm Michael! 👋</h1>
       <section>
-        <Right />
-        <div style={{ float: "left", width: "70%" }}>
+        <div style={{ margin: "0px auto", width: "70%" }}>
           <p>
-            I'm <strong>Michael Fatemi,</strong> an app developer and machine
-            learning enthusiast.
+            I'm Michael Fatemi, an app developer and machine learning
+            enthusiast.
           </p>
           <a href="https://github.com/myfatemi04">GitHub</a>
           <br />
@@ -149,32 +186,8 @@ export default function About() {
             Courses: Artificial Intelligence, Computer Vision, Mobile and Web
             App Development, Data Structures
           </p>
+          <ThingsIveWorkedOn />
           <CoolThingsIveMade />
-          <h1>Work Experience</h1>
-          <p>
-            <div className="project-card">
-              <h2>Army Research Lab Intern</h2>
-              <img src="/images/lasers.JPG" alt="Lasers!" width="100%" />
-              <em>
-                Lasers! They cause this crystal to luminesce due to changes in
-                the energy states of the atoms.
-              </em>
-              <br />
-              From June 2021 to August 2021, I worked as a research intern for
-              Dr. Ei Brown at the{" "}
-              <a href="http://arl.army.mil">Army Research Lab</a> in Adelphi,
-              Maryland. My primary research goal was to measure the efficiency
-              of various laser crystals by detecting the amount and wavelengths
-              of emitted light from each crystal. I wrote Python programs to
-              automatically detect the decay time of an emitted signal and
-              decompose a single decay signal into various component decay
-              signals. I also wrote a Java program to interface directly with
-              the drivers for a lab spectrometer, setting up a server that piped
-              real-time detection events to clients, performed data
-              transformations such as noise reduction and signal peak
-              identification, and visualized the results in a dashboard.
-            </div>
-          </p>
           <h1>Volunteering</h1>
           <p>
             From April 2020 to April 2021, I was a founding member and the
@@ -202,5 +215,26 @@ export default function About() {
         </div>
       </section>
     </Container>
+  );
+}
+
+export default function Main() {
+  return (
+    <>
+      <div className="main-image">
+        <div className="background-pseudo"></div>
+        <div className="main-card">
+          <div style={{ maxWidth: "33vw" }}>
+            <h1>Michael Fatemi</h1>
+            <p style={{ display: "inline-block" }}>
+              Hey! I'm Michael Fatemi, a software developer and machine learning
+              enthusiast. I'm interested in biotech, robotics, aerospace, and
+              quantum computing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <About />
+    </>
   );
 }
