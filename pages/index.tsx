@@ -102,6 +102,23 @@ function CoolThingsIveMade() {
             id="xQIsbsgVpas"
             style={{ width: "100%", aspectRatio: "1920/1080" }}
           />
+          An app to simplify carpooling: students can easily find people to
+          carpool with for after-school events. 300+ users. Worked with school
+          administration and sports coaches to get schoolwide adoption. Helps
+          students who live far away from a school to have the same access to
+          after-school activities as people who live nearby, especially if they
+          are unable to drive themselves. Stack used: Frontend: Typescript React
+          Backend: Node.js/Express, Prisma ORM, PostgreSQL database Hosting:
+          DigitalOcean droplets, VPC for database security
+          <div className="link-row">
+            <a href="https://www.youtube.com/watch?v=wJrC0Eozu6Y">Demo</a>
+            <a href="http://github.com/myfatemi04/wheelshare-frontend">
+              Frontend
+            </a>
+            <a href="http://github.com/myfatemi04/wheelshare-altbackend">
+              Backend
+            </a>
+          </div>
         </div>
         {/* EyeOS */}
         <div className="project-quadrant">
@@ -133,7 +150,7 @@ function CoolThingsIveMade() {
 function Experience() {
   return (
     <div style={{ paddingLeft: "4rem" }}>
-      <h1>Research</h1>
+      <h1>Experience</h1>
       <div className="project-row">
         <div className="image">
           <img src="/images/visium_small.png" alt="Visium" />
@@ -146,10 +163,12 @@ function Experience() {
             at Dartmouth-Hitchcock Medical Center
           </em>
           <p>
-            I've been developing machine learning models to make predictions of
-            which genes are most responsible for aggressive cancer tumors. They
-            may also be useful for determining whether immunotherapy will be
-            effective or not.
+            Worked as an intern at the Emerging Diagnostics and Investigative
+            Technologies lab at Dartmouth. Developed visual transformers, graph
+            convolutional networks, and object detection models to infer spatial
+            gene expression of tumors with 0.90 median auROC based on microscope
+            slides. Wrote a paper and created a poster for a virtual conference
+            at the end of the program.
           </p>
         </div>
       </div>
@@ -161,17 +180,29 @@ function Experience() {
           <h2>Army Research Lab Intern</h2>
           <em>June 2021 &ndash; August 2021</em>
           <p>
-            I worked as a research intern for Dr. Ei Brown at the{" "}
-            <a href="http://arl.army.mil">Army Research Lab</a> in Adelphi,
-            Maryland to measure the efficiency of various laser crystals by
-            detecting the amount and wavelengths of emitted light from each
-            crystal. I wrote Python programs to automatically detect the decay
-            time of an emitted signal and decompose a single decay signal into
-            various component decay signals. I also wrote a Java program to
-            interface directly with the drivers for a lab spectrometer, setting
-            up a server that piped real-time detection events to clients,
-            performed data transformations such as noise reduction and signal
-            peak identification, and visualized the results in a dashboard.
+            I worked as a research intern for Dr. Ei Brown at the Army Research
+            Lab in Adelphi, Maryland. My primary research goal was to measure
+            the efficiency of various laser crystals by detecting the amount and
+            wavelengths of emitted light from each crystal. I wrote Python
+            programs to automatically detect the decay time of an emitted
+            signal, create a real-time spectrum analyzer that enabled us to
+            discover emissions peaks more efficiently, and decompose a single
+            decay signal into various component decay signals.
+          </p>
+        </div>
+      </div>
+      <div className="project-row">
+        <div className="image"></div>
+        <div className="content">
+          <h2>Project Caelus</h2>
+          <em>November 2020 &ndash; November 2021</em>
+          <p>
+            Project Caelus is aiming to be the first high school team to create
+            a liquid-fueled rocket. I wrote C++ code to interface between
+            Arduino and remote ground control software and integrate low-level
+            sensor data in a read-control-actuate loop. I also helped optimize
+            some printed circuit boards with KiCAD. The software was used to
+            control valves during cold flow tests.
           </p>
         </div>
       </div>
@@ -207,9 +238,10 @@ function Education() {
           <b>Thomas Jefferson High School for Science and Technology</b>
           <p>
             <em>2018 &ndash; 2022</em>
-            <br />
-            Artificial Intelligence, Computer Vision, Mobile and Web App
-            Development, Data Structures
+          </p>
+          <p>
+            Artificial Intelligence, Computer Vision, Web/Mobile Development,
+            Data Structures, Macro/Microeconomics, Multivariable Calculus
           </p>
         </div>
       </div>
@@ -222,12 +254,14 @@ function Volunteering() {
     <div style={{ padding: "4rem" }}>
       <h1>Volunteering</h1>
       <p>
-        From April 2020 to April 2021, I was a founding member and the director
-        of events at <a href="https://codefycs.org/">Codefy</a>, a computer
-        science tutoring nonprofit. I taught courses in web development and
-        Python, built the enrollment system that was used by thousands of
-        students, and organized workshops in machine learning, game development,
-        and computer vision.
+        From April 2020 to April 2021, I volunteered at a computer science
+        tutoring nonprofit called <a href="https://codefycs.org/">Codefy</a>. I
+        taught courses in Python and web development, and hosted workshops where
+        students learned the fundamentals of machine learning, detected and
+        classified traffic signs using computer vision, and developed games. I
+        also served as a mentor, individually helping students learn Python, as
+        well as leading courses in website development. I also developed an
+        enrollment system that served thousands of students.
       </p>
       <p>
         As a member of the student government, I{" "}
@@ -286,14 +320,15 @@ export default function Main() {
           style={{
             paddingLeft: "4rem",
             paddingBottom: "4rem",
-            // backgroundColor: "rgb(32, 32, 32)",
-            // color: "white",
           }}
         >
           <h1>Contact Me</h1>
+          <span style={{ position: "relative", display: "inline-block" }}>
+            michael [at] michaelfatemi.com
+          </span>
           <p>
-            Please send me an email at gsk6me [at] virginia.edu, or message me
-            on <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>.
+            Or connect with me on{" "}
+            <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
           </p>
         </div>
       </Container>
