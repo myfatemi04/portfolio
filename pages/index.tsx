@@ -152,42 +152,83 @@ function Experience() {
     <div style={{ paddingLeft: "4rem" }}>
       <h1>Experience</h1>
       <div className="project-row">
-        <div className="image">
-          <img src="/images/visium_small.png" alt="Visium" />
-        </div>
+        <div className="image"></div>
         <div className="content">
-          <h2>Spatial Transcriptomics</h2>
-          <em>
-            June 2022 &ndash; Present; with the{" "}
-            <a href="https://jlevy44.github.io/levylab/projects/">Levy Lab</a>{" "}
-            at Dartmouth-Hitchcock Medical Center
-          </em>
+          <h2>Solar Car Team</h2>
+          <em>August 2022 &ndash; Present; Embedded Systems</em>
           <p>
-            Worked as an intern at the Emerging Diagnostics and Investigative
-            Technologies lab at Dartmouth. Developed visual transformers, graph
-            convolutional networks, and object detection models to infer spatial
-            gene expression of tumors with 0.90 median auROC based on microscope
-            slides. Wrote a paper and created a poster for a virtual conference
-            at the end of the program.
+            Working to develop a solar-powered car. Recently, I contributed to
+            the development of a regenerative braking system to improve the
+            car's battery efficiency.
+          </p>
+        </div>
+      </div>
+      <div className="project-row">
+        <div className="image"></div>
+        <div className="content">
+          <h2>Energy and Light Management Group</h2>
+          <em>October 2022 &ndash; Present</em>
+          <p>
+            Optimizing the training of neuroevolution potentials (NEPs) to
+            predict properties of complex alloys. Using GPUMD and UVA's Rivanna
+            cluster.
           </p>
         </div>
       </div>
       <div className="project-row">
         <div className="image">
-          <img src="/images/lasers.JPG" alt="Lasers!" />
+          {/* <img src="/images/visium_small.png" alt="Visium" /> */}
         </div>
         <div className="content">
-          <h2>Army Research Lab Intern</h2>
-          <em>June 2021 &ndash; August 2021</em>
+          <h2>Internship with Dartmouth-Hitchcock Medical Center</h2>
+          <em>
+            June 2022 &ndash; Present; with the{" "}
+            <a href="https://jlevy44.github.io/levylab/projects/">Levy Lab</a>
+          </em>
           <p>
-            I worked as a research intern for Dr. Ei Brown at the Army Research
-            Lab in Adelphi, Maryland. My primary research goal was to measure
-            the efficiency of various laser crystals by detecting the amount and
-            wavelengths of emitted light from each crystal. I wrote Python
-            programs to automatically detect the decay time of an emitted
-            signal, create a real-time spectrum analyzer that enabled us to
-            discover emissions peaks more efficiently, and decompose a single
-            decay signal into various component decay signals.
+            Here, the goal is to use spatially-resolved transcriptomics to
+            improve the diagnosis accuracy of cancer metastasis. <br />
+            What I did specifically:
+            <ul>
+              <li>
+                Analyzed spatial autocorrelation of colorectal cancer genomics
+                data in Python with SpatialDE and SPARK-X
+              </li>
+              <li>
+                Developed convolutional neural networks and graph attention
+                networks with Python/Pytorch to predict spatial expression of
+                cancer-related genes with an AUROC of up to 0.89
+              </li>
+            </ul>
+            Also developed some experience with Slurm/high performance
+            computing. Work soon to be submitted to a conference.
+          </p>
+        </div>
+      </div>
+      <div className="project-row">
+        <div className="image">
+          {/* <img src="/images/lasers.JPG" alt="Lasers!" /> */}
+        </div>
+        <div className="content">
+          <h2>Internship with Army Research Lab</h2>
+          <em>June 2021 &ndash; August 2021; with Dr. Ei Brown</em>
+          <p>
+            My primary research goal was to measure the efficiency of various
+            laser crystals by detecting the amount and wavelengths of emitted
+            light from each crystal. <br />
+            What I did specifically:
+            <ul>
+              <li>
+                Write Python programs to automatically detect the decay time of
+                an emitted signal. This automation reduced analysis time by
+                ~90%.
+              </li>
+              <li>
+                Create a real-time spectrum analyzer that enabled us to discover
+                emissions peaks more efficiently, and decompose a single decay
+                signal into various component decay signals
+              </li>
+            </ul>
           </p>
         </div>
       </div>
