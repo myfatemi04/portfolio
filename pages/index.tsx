@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import Youtube from "../components/Youtube";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 function OtherThingsAboutMe() {
   return (
@@ -151,6 +152,20 @@ function Experience() {
   return (
     <div style={{ paddingLeft: "4rem" }}>
       <h1>Experience</h1>
+      <div className="project-row">
+        <div className="image"></div>
+        <div className="content">
+          <h2>Kyron Learning</h2>
+          <em>
+            December 2022 &ndash; Present; Natural Language Processing Intern
+          </em>
+          <p>
+            Developing natural language processing techniques to scale up the
+            world's best teachers. Using large language models and reinforcement
+            learning with human feedback.
+          </p>
+        </div>
+      </div>
       <div className="project-row">
         <div className="image"></div>
         <div className="content">
@@ -328,8 +343,9 @@ function MainImage() {
 
           <p style={{ display: "inline-block" }}>
             Hey! I'm Michael Fatemi, a software developer and machine learning
-            enthusiast. I'm interested in biotech, robotics, aerospace, and
-            quantum computing.
+            enthusiast. I have some experience with natural language processing
+            and full-stack development, and I'm interested in biotech, robotics,
+            aerospace, and quantum computing.
           </p>
 
           <div className="link-row">
@@ -349,30 +365,29 @@ function MainImage() {
 
 export default function Main() {
   return (
-    <>
-      <Container>
-        <MainImage />
-        <Education />
-        <Experience />
-        <Volunteering />
-        <CoolThingsIveMade />
-        <OtherThingsAboutMe />
-        <div
-          style={{
-            paddingLeft: "4rem",
-            paddingBottom: "4rem",
-          }}
-        >
-          <h1>Contact Me</h1>
-          <span style={{ position: "relative", display: "inline-block" }}>
-            michael [at] michaelfatemi.com
-          </span>
-          <p>
-            Or connect with me on{" "}
-            <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
-          </p>
-        </div>
-      </Container>
-    </>
+    <Container>
+      <GoogleAnalytics />
+      <MainImage />
+      <Education />
+      <Experience />
+      <Volunteering />
+      <CoolThingsIveMade />
+      <OtherThingsAboutMe />
+      <div
+        style={{
+          paddingLeft: "4rem",
+          paddingBottom: "4rem",
+        }}
+      >
+        <h1>Contact Me</h1>
+        <span style={{ position: "relative", display: "inline-block" }}>
+          michael [at] michaelfatemi.com
+        </span>
+        <p>
+          Or connect with me on{" "}
+          <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
+        </p>
+      </div>
+    </Container>
   );
 }
