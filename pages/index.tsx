@@ -221,6 +221,29 @@ function Experience() {
         </div>
       </div>
       <div className="project-row">
+        {/* deprecated image field? */}
+        <div className="image"></div>
+        <div className="content">
+          <h2>Sound Camera Project</h2>
+          <em>August 2021 &ndash; May 2022 (student research at TJ)</em>
+          <p>
+            For student research at TJ, I made a "sound camera" with a Raspberry
+            Pi, an embedded webcam, and a microphone array. This used a
+            beamforming algorithm. If you want to read more about how I made it,
+            see{" "}
+            <a href="https://docs.google.com/document/d/1do7sj8hAGTIEzs5tjTuxz3jxNuWoCZ0ob-_WXh10-J8/edit?usp=sharing">
+              here
+            </a>
+            !
+          </p>
+          <img
+            src="/images/soundcamera.png"
+            alt="Sound camera: Hexagonal microphone array with a camera on the top face and a Raspberry Pi below that."
+            style={{ maxWidth: "10rem" }}
+          />
+        </div>
+      </div>
+      <div className="project-row">
         <div className="image">
           {/* <img src="/images/lasers.JPG" alt="Lasers!" /> */}
         </div>
