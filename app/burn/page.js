@@ -1,5 +1,6 @@
+"use client";
+
 import { useCallback, useRef, useState } from "react";
-// import "./burn.css";
 
 function App() {
   const [text, _setText] = useState("");
