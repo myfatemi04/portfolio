@@ -491,7 +491,7 @@ function Volunteering() {
         community of builders at UVA.
       </p>
       <img
-        src="/images/IMG_7602_VirginiaEntrepreneurshipOrganization.png"
+        src="/images/veo.png"
         alt="A photo from October 2023, in which we hosted a UVA alum for a fireside chat about startups and life after college."
         style={{ maxWidth: "100%" }}
       />
