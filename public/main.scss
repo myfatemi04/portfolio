@@ -70,7 +70,7 @@ $modal-z-index: 1;
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(max(calc(100% / 2 - 20px), 720px), 1fr)
+    minmax(max(calc(100% / 2 - 20px), 512px), 1fr)
   );
   grid-gap: 20px;
 
@@ -82,7 +82,7 @@ $modal-z-index: 1;
 
 .project-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 1rem;
 
   .image {
@@ -96,6 +96,7 @@ $modal-z-index: 1;
   .content {
     flex: 4;
     padding-left: 1rem;
+    display: flex;
 
     h2 {
       margin: 0 0 0.5rem;
@@ -103,6 +104,15 @@ $modal-z-index: 1;
 
     p {
       max-width: 40rem;
+    }
+
+    img {
+      max-width: min(30rem, 100%);
+    }
+
+    .col {
+      flex: 1;
+      padding: 1rem;
     }
   }
 }
