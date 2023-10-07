@@ -1,6 +1,6 @@
 import Container from "../components/Container";
 import Youtube from "../components/Youtube";
-import GoogleAnalytics from "./GoogleAnalytics";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 function OtherThingsAboutMe() {
   return (
@@ -182,20 +182,20 @@ function Experience() {
               optimizers to find the best path. However, as the length and
               constraints applied to the path become more complex, it becomes
               impractical to try to find a globally optimal solution.
-              <ul>
-                <li>
-                  To address this, I used reinforcement learning to train a
-                  neural network to generate paths for an agent moving along a
-                  grid with obstacles to increase the amount of ambiguity as to
-                  its final goal.
-                </li>
-                <li>
-                  My approach reduces the time to generate a path by up to 97%
-                  without a significant decrease in path quality. My work is
-                  currently under review at AAMAS 2024.
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                To address this, I used reinforcement learning to train a neural
+                network to generate paths for an agent moving along a grid with
+                obstacles to increase the amount of ambiguity as to its final
+                goal.
+              </li>
+              <li>
+                My approach reduces the time to generate a path by up to 97%
+                without a significant decrease in path quality. My work is
+                currently under review at AAMAS 2024.
+              </li>
+            </ul>
           </div>
           <div className="col">
             <img
@@ -218,10 +218,12 @@ function Experience() {
           December 2022 &ndash; October 2023; Natural Language Processing Intern
         </em>
         <div className="content">
-          <p>
-            Developing natural language processing techniques to scale up the
-            world's best teachers. I had a great time exploring meta-prompting
-            techniques. Some of the things I did were:
+          <div className="col">
+            <p>
+              Developing natural language processing techniques to scale up the
+              world's best teachers. I had a great time exploring meta-prompting
+              techniques. Some of the things I did were:
+            </p>
             <ul>
               <li>
                 Improve response quality through self-revision, step-by-step
@@ -237,7 +239,7 @@ function Experience() {
                 models like GPT-4.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div className="project-row">
@@ -285,20 +287,18 @@ function Experience() {
                 of colorectal tumors: A pilot study
               </a>
             </p>
-            <p>
-              What I did specifically:
-              <ul>
-                <li>
-                  Analyzed spatial autocorrelation of colorectal cancer genomics
-                  data in Python with SpatialDE and SPARK-X
-                </li>
-                <li>
-                  Developed convolutional neural networks and graph attention
-                  networks with Python/Pytorch to predict spatial expression of
-                  cancer-related genes with an AUROC of up to 0.89
-                </li>
-              </ul>
-            </p>
+            <p>What I did specifically:</p>
+            <ul>
+              <li>
+                Analyzed spatial autocorrelation of colorectal cancer genomics
+                data in Python with SpatialDE and SPARK-X
+              </li>
+              <li>
+                Developed convolutional neural networks and graph attention
+                networks with Python/Pytorch to predict spatial expression of
+                cancer-related genes with an AUROC of up to 0.89
+              </li>
+            </ul>
           </div>
         </div>
         <img
@@ -316,9 +316,11 @@ function Experience() {
         </h2>
         <em>October 2022 &ndash; February 2023</em>
         <div className="content">
-          <p>
-            I trained machine learning models to predict the forces between
-            atoms in molecular simulations.
+          <div className="col">
+            <p>
+              I trained machine learning models to predict the forces between
+              atoms in molecular simulations.
+            </p>
             <ul>
               <li>
                 I created a branch of the library{" "}
@@ -332,7 +334,7 @@ function Experience() {
                 gradient descent, genetic algorithms, and simulated annealing.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div className="project-row">
@@ -344,25 +346,25 @@ function Experience() {
               For a year-long student research project in high school, I made a
               "sound camera" with a Raspberry Pi, an embedded webcam, and a
               microphone array.
-              <ul>
-                <li>
-                  To do this, I implemented a beamforming algorithm in C and
-                  wrote code to stream information from the microphone array to
-                  a processing server.
-                </li>
-                <li>
-                  Single sound directions of arrival could be distinguished
-                  within 8 degrees of accuracy.
-                </li>
-                <li>
-                  If you want to read more about how I made it, see{" "}
-                  <a href="https://docs.google.com/document/d/1do7sj8hAGTIEzs5tjTuxz3jxNuWoCZ0ob-_WXh10-J8/edit?usp=sharing">
-                    here
-                  </a>
-                  !
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                To do this, I implemented a beamforming algorithm in C and wrote
+                code to stream information from the microphone array to a
+                processing server.
+              </li>
+              <li>
+                Single sound directions of arrival could be distinguished within
+                8 degrees of accuracy.
+              </li>
+              <li>
+                If you want to read more about how I made it, see{" "}
+                <a href="https://docs.google.com/document/d/1do7sj8hAGTIEzs5tjTuxz3jxNuWoCZ0ob-_WXh10-J8/edit?usp=sharing">
+                  here
+                </a>
+                !
+              </li>
+            </ul>
           </div>
           <div className="col">
             <img
@@ -387,19 +389,19 @@ function Experience() {
               laser crystals by detecting the amount and wavelengths of emitted
               light from each crystal. <br />
               What I did specifically:
-              <ul>
-                <li>
-                  Write Python programs to automatically detect the decay time
-                  of an emitted signal. This automation reduced analysis time by
-                  ~90%.
-                </li>
-                <li>
-                  Create a real-time spectrum analyzer that enabled us to
-                  discover emissions peaks more efficiently, and decompose a
-                  single decay signal into various component decay signals
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                Write Python programs to automatically detect the decay time of
+                an emitted signal. This automation reduced analysis time by
+                ~90%.
+              </li>
+              <li>
+                Create a real-time spectrum analyzer that enabled us to discover
+                emissions peaks more efficiently, and decompose a single decay
+                signal into various component decay signals
+              </li>
+            </ul>
           </div>
           <div className="col">
             <img src="/images/lasers.JPG" alt="Lasers!" />
@@ -481,8 +483,25 @@ function Education() {
 
 function Volunteering() {
   return (
-    <div style={{ padding: "4rem" }}>
+    <div style={{ padding: "4rem", maxWidth: "40rem", margin: "0 auto" }}>
       <h1>Volunteering</h1>
+      <h2>Virginia Entrepreneurship Organization</h2>
+      <p>
+        I help organize events and workshops to help maintain a strong and dense
+        community of builders at UVA.
+      </p>
+      <img
+        src="/images/IMG_7602_VirginiaEntrepreneurshipOrganization.png"
+        alt="A photo from October 2023, in which we hosted a UVA alum for a fireside chat about startups and life after college."
+        style={{ maxWidth: "100%" }}
+      />
+      <p>
+        <em>
+          A photo from October 2023, in which we hosted a UVA alum for a
+          fireside chat about startups and life after college.
+        </em>
+      </p>
+      <h2>Computer Science Tutoring</h2>
       <p>
         From April 2020 to April 2021, I volunteered at a computer science
         tutoring nonprofit called <a href="https://codefycs.org/">Codefy</a>. I
@@ -493,6 +512,7 @@ function Volunteering() {
         well as leading courses in website development. I also developed an
         enrollment system that served thousands of students.
       </p>
+      <h2>Student Government</h2>
       <p>
         As a member of the student government, I{" "}
         <a href="https://sga.tjhsst.edu/">rebuilt</a> the main website with
