@@ -171,8 +171,7 @@ function Experience() {
       <h1>Experience</h1>
       <div className="project-row">
         <h2>
-          Reinforcement Learning Research with University of Maryland and Army
-          Research Lab
+          Reinforcement Learning Research with University of Maryland
         </h2>
         <em>May 2023 &ndash; August 2023</em>
         <div className="content">
@@ -192,8 +191,7 @@ function Experience() {
               </li>
               <li>
                 My approach reduces the time to generate a path by up to 97%
-                without a significant decrease in path quality. My work is
-                currently under review at AAMAS 2024.
+                without a significant decrease in path quality. Currently in review for a conference.
               </li>
             </ul>
           </div>
