@@ -165,10 +165,154 @@ function CoolThingsIveMade() {
   );
 }
 
+function CoolThingsIveMadeTextbased() {
+  return (
+    <>
+      <h2>Projects</h2>
+      {/* CCW */}
+      <h3>Cactus Courseware</h3>
+      <Youtube
+        id="JICyJuVcmh0"
+        style={{ width: "100%", aspectRatio: "1920/1080" }}
+      />
+      <br />
+      This is an open-source educational content website that my friends and I
+      built. Educational content can be imported from GitHub and is updated
+      automatically whenever contributors make changes. It includes animations
+      and interactive content to cater to different learning styles. Uses React
+      and Express as its frontend and backend frameworks, and MongoDB for data
+      persistence. <br />
+      <div className="link-row">
+        <a href="http://github.com/myfatemi04/cactus-courseware-frontend">
+          Frontend
+        </a>
+        <a href="http://github.com/myfatemi04/cactus-courseware-backend">
+          Backend
+        </a>
+      </div>
+      {/* StreetSweep */}
+      <h3>StreetSweep</h3>
+      <Youtube
+        id="RMDFT7telOo"
+        style={{ width: "100%", aspectRatio: "1920/1080" }}
+      />
+      StreetSweep is an app that my friend and I created for a hackathon with
+      the goal of helping policymakers and volunteer organizations by creating a
+      heatmap of the prevalence and type of trash at each location. It uses
+      class-agnostic object detection with a model adapted from a ResNet
+      classifier to automatically detect garbage in photos of street litter.{" "}
+      <br />
+      <div className="link-row">
+        <a href="http://github.com/myfatemi04/streetsweep-frontend">Frontend</a>
+        <a href="http://github.com/myfatemi04/streetsweep">Backend</a>
+      </div>
+      {/* WheelShare */}
+      <h3>WheelShare</h3>
+      <Youtube
+        id="xQIsbsgVpas"
+        style={{ width: "100%", aspectRatio: "1920/1080" }}
+      />
+      An app to simplify carpooling: students can easily find people to carpool
+      with for after-school events. 300+ users. Worked with school
+      administration and sports coaches to get schoolwide adoption. Helps
+      students who live far away from a school to have the same access to
+      after-school activities as people who live nearby, especially if they are
+      unable to drive themselves. Stack used: Frontend: Typescript React
+      Backend: Node.js/Express, Prisma ORM, PostgreSQL database Hosting:
+      DigitalOcean droplets, VPC for database security
+      <div className="link-row">
+        <a href="https://www.youtube.com/watch?v=wJrC0Eozu6Y">Demo</a>
+        <a href="http://github.com/myfatemi04/wheelshare-frontend">Frontend</a>
+        <a href="http://github.com/myfatemi04/wheelshare-altbackend">Backend</a>
+      </div>
+      {/* EyeOS */}
+      <h3>EyeOS</h3>
+      <Youtube
+        id="PvBQVCoy1MQ"
+        style={{ width: "100%", aspectRatio: "1920/1280" }}
+      />
+      An app that enables the disabled to control their computer mouse with
+      their eyes: after a quick calibration step, the computer would detect
+      which section of the screen they were looking at with 90% accuracy and
+      move the mouse there. Then, via voice recognition provided by Google
+      Cloud, they could click on those parts of the screen, type, search the
+      web, and perform other tasks. Won 1st Place at the HooHacks 2020
+      Hackathon, an official hackathon organized by students at the University
+      of Virginia. Utilized Haar cascades, DLib facial recognition, a custom
+      iris detection algorithm made with OpenCV, and voice recognition from
+      Google Cloud.
+      <br />
+      <div className="link-row">
+        <a href="http://github.com/myfatemi04/eyeos">Code</a>
+      </div>
+    </>
+  );
+}
+
+function ClubsAndTeamsTextbased() {
+  return (
+    <>
+      <h2>Clubs and Project Teams</h2>
+      <h3>University of Virginia Autonomous Racing</h3>
+      <p>
+        We are competing in the{" "}
+        <a href="https://www.indyautonomouschallenge.com/">
+          Indy Autonomous Challenge
+        </a>
+        , where teams from around the world (UVA, MIT, CMU, KAIST, TUM) put
+        their algorithms head to head in an autonomous Indy 500. We're using
+        LiDAR sensors, cameras, and GPS to navigate the track. I am implementing
+        algorithms to accurately detect other cars and plan methods to overtake
+        opponents in real-time.
+      </p>
+      <h3>University of Virginia Solar Car Team</h3>
+      <p>
+        Working to develop a solar-powered car. Recently, I contributed to the
+        development of a regenerative braking system to improve the car's
+        battery efficiency. I mostly developed embedded software using Mbed OS
+        and C++. I also gained experience using Docker as a simulated build
+        environment.
+      </p>
+      <h3>Virginia Entrepreneurship Organization</h3>
+      <p>
+        I help organize events and workshops to help maintain a strong and dense
+        community of builders at UVA.
+      </p>
+    </>
+  );
+}
+
 function Experience() {
   return (
     <div style={{ paddingLeft: "4rem" }}>
       <h1>Experience</h1>
+      <div className="project-row">
+        <h2>University of Virginia Autonomous Racing</h2>
+        <em>August 2023 &ndash; Present</em>
+        <div className="content">
+          <div className="col">
+            <p>
+              We are competing in the{" "}
+              <a href="https://www.indyautonomouschallenge.com/">
+                Indy Autonomous Challenge
+              </a>
+              , where teams from around the world (UVA, MIT, CMU, KAIST, TUM)
+              put their algorithms head to head in an autonomous Indy 500. We're
+              using LiDAR sensors, cameras, and GPS to navigate the track. I am
+              implementing algorithms to accurately detect other cars and plan
+              methods to overtake opponents in real-time.
+            </p>
+          </div>
+          <div className="col">
+            <img
+              src="/images/CavalierAutonomousRacing.JPG"
+              alt="Photo of us with the car in front of the Rotunda."
+            />
+            <br />
+            <em>A photo of us with the car in front of the Rotunda.</em>
+          </div>
+        </div>
+      </div>
       <div className="project-row">
         <h2>
           Reinforcement Learning Research with University of Maryland and Army
@@ -193,7 +337,7 @@ function Experience() {
               <li>
                 My approach reduces the time to generate a path by up to 97%
                 without a significant decrease in path quality. My work is
-                currently under review at AAMAS 2024.
+                currently under review at a conference.
               </li>
             </ul>
           </div>
@@ -201,6 +345,7 @@ function Experience() {
             <img
               src="/images/arl-robotics-1.png"
               alt="A visual depicting robotic paths through a graph."
+              style={{ height: "15rem" }}
             />
             <br />
             <em>
@@ -259,6 +404,7 @@ function Experience() {
             <img
               src="/images/solar_car.png"
               alt="A friend and I working to debug an electrical issue."
+              style={{ height: "15rem" }}
             />
             <br />
             <em>A friend and I working to debug an electrical issue.</em>
@@ -410,7 +556,7 @@ function Experience() {
           </div>
         </div>
       </div>
-      <div className="project-row">
+      {/* <div className="project-row">
         <h2>Project Caelus</h2>
         <em>November 2020 &ndash; November 2021</em>
         <div className="content">
@@ -423,58 +569,67 @@ function Experience() {
             control valves during cold flow tests.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
 
 function Education() {
   return (
-    <div style={{ paddingLeft: "4rem", maxWidth: "40rem" }}>
+    <div style={{ paddingLeft: "4rem" }}>
       <h1>Education</h1>
-      <div className="edu-row">
-        <div className="image">
-          <img src="/images/uva_logo.png" alt="University of Virginia" />
-        </div>
+      <div className="project-row">
         <div className="content">
-          <b>University of Virginia</b>
-          <p>
-            <em>2022 &ndash; 2026</em>
-          </p>
-          <p>Bachelor's of Science in Computer Science and Mathematics</p>
-          <p>
-            Coursework: Advanced Algorithms, Neuroscience, Probability,
-            First-Order Optimization Techniques, Operating Systems, Partial
-            Differential Equations, Complex Variables, Real Analysis
-          </p>
-          <p>
-            Activities: Cavalier Autonomous Racing, Virginia Entrepreneurship
-            Organization, Chinese Student Association, Korean Student
-            Association
-          </p>
-        </div>
-      </div>
-      <div className="edu-row">
-        <div className="image">
-          <img
-            src="/images/TJ_logo.png"
-            alt="Thomas Jefferson High School for Science and Technology"
-          />
-        </div>
-        <div className="content">
-          <b>Thomas Jefferson High School for Science and Technology</b>
-          <p>
-            <em>2018 &ndash; 2022</em>
-          </p>
-          <p>
-            Coursework: Artificial Intelligence, Computer Vision, Web/Mobile
-            Development, Data Structures, Macro/Microeconomics, Multivariable
-            Calculus
-          </p>
-          <p>
-            Activities: Student Government, Rubik's Cube Club, Track and Field,
-            Cross Country, Urban Dance Movement
-          </p>
+          <div className="col">
+            <div className="edu-row">
+              <div className="image">
+                <img src="/images/uva_logo.png" alt="University of Virginia" />
+              </div>
+              <div className="educontent">
+                <b>University of Virginia</b>
+                <p>
+                  <em>2022 &ndash; 2026</em>
+                </p>
+                <p>Bachelor's of Science in Computer Science and Mathematics</p>
+                <p>
+                  Coursework: Advanced Algorithms, Neuroscience, Probability,
+                  First-Order Optimization Techniques, Operating Systems,
+                  Partial Differential Equations, Complex Variables, Real
+                  Analysis
+                </p>
+                <p>
+                  Activities: Cavalier Autonomous Racing, Virginia
+                  Entrepreneurship Organization, Chinese Student Association,
+                  Korean Student Association
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="edu-row">
+              <div className="image">
+                <img
+                  src="/images/TJ_logo.png"
+                  alt="Thomas Jefferson High School for Science and Technology"
+                />
+              </div>
+              <div className="educontent">
+                <b>Thomas Jefferson High School for Science and Technology</b>
+                <p>
+                  <em>2018 &ndash; 2022</em>
+                </p>
+                <p>
+                  Coursework: Artificial Intelligence, Computer Vision,
+                  Web/Mobile Development, Data Structures, Macro/Microeconomics,
+                  Multivariable Calculus
+                </p>
+                <p>
+                  Activities: Student Government, Rubik's Cube Club, Track and
+                  Field, Cross Country, Urban Dance Movement
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -529,35 +684,210 @@ function Volunteering() {
 
 function MainImage() {
   return (
-    <div className="main-image">
-      <div className="background-pseudo"></div>
+    <div
+      style={{
+        display: "flex",
+        height: "25vh",
+        width: "100%",
+        backgroundColor: "rgb(255, 85, 69)",
+        color: "white",
+      }}
+    >
+      <div style={{ flex: 1 }}>
+        <img src="/images/IMG_1448.small.png" style={{ height: "100%" }} />
+      </div>
+      <div style={{ flex: 4, verticalAlign: "center" }}>
+        <h1>Michael Fatemi</h1>
+
+        <p>
+          Hey! I'm Michael Fatemi, a software developer and machine learning
+          enthusiast. I have some experience with natural language processing
+          and full-stack development, and I'm interested in biotech, robotics,
+          aerospace, and quantum computing.
+        </p>
+      </div>
+    </div>
+    // <div className="main-image">
+
+    /* <div className="background-pseudo"></div>
       <div className="main-card">
-        <div style={{ maxWidth: "33vw" }}>
-          <h1>Michael Fatemi</h1>
+        <h1>Michael Fatemi</h1>
 
-          <p style={{ display: "inline-block" }}>
-            Hey! I'm Michael Fatemi, a software developer and machine learning
-            enthusiast. I have some experience with natural language processing
-            and full-stack development, and I'm interested in biotech, robotics,
-            aerospace, and quantum computing.
-          </p>
+        <p style={{ display: "inline-block" }}>
+          Hey! I'm Michael Fatemi, a software developer and machine learning
+          enthusiast. I have some experience with natural language processing
+          and full-stack development, and I'm interested in biotech, robotics,
+          aerospace, and quantum computing.
+        </p>
 
-          <div className="link-row">
-            <a href="https://github.com/myfatemi04">GitHub</a>
+        <div className="link-row">
+          <a href="https://github.com/myfatemi04">GitHub</a>
 
-            <a href="https://www.youtube.com/channel/UC0CG_oek4RpaqqJlJlFHSKQ">
-              YouTube
-            </a>
+          <a href="https://www.youtube.com/channel/UC0CG_oek4RpaqqJlJlFHSKQ">
+            YouTube
+          </a>
 
-            <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
-          </div>
+          <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
         </div>
+      </div> */
+    // </div>
+  );
+}
+
+export default function Main() {
+  return (
+    <div style={{ display: "flex", maxWidth: "60rem", margin: "10rem auto 0" }}>
+      {/* First column */}
+      <div style={{ flex: 1, paddingRight: "20px" }}>
+        <h1>Michael Fatemi</h1>
+        <img
+          src="/images/FB.jpeg"
+          alt="Michael Fatemi"
+          style={{ width: "100%" }}
+        />
+        <p>
+          Let's connect! Would love to chat about anything.
+          <br />
+          michael [at] michaelfatemi.com
+          <br />
+          Or connect with me on{" "}
+          <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
+        </p>
+      </div>
+
+      {/* Second column */}
+      <div style={{ flex: 2, padding: "1rem" }}>
+        <p>
+          I'm Michael Fatemi, a software developer and machine learning
+          enthusiast.
+        </p>
+        <p>I am researching robotic intelligence and bioinformatics.</p>
+        <p>
+          Previously, I was a student researcher at Dartmouth's Emerging
+          Diagnostic and Investigative Technologies lab, where I used deep
+          computer vision and statistical techniques to analyze colorectal
+          cancer data.
+        </p>
+        <p>
+          I also developed robotic path planning techniques using deep
+          reinforcement learning with graph neural networks at the US Army
+          Research Lab.
+        </p>
+        <p>
+          Additionally, worked as a contractor with Kyron Learning, where I
+          developed methods to improve the factual accuracy and tutoring
+          capabilities of language models.
+        </p>
+        <p>
+          I am currently an undergraduate at the University of Virginia,
+          graduating in 2026. I am majoring in computer science and mathematics.
+          I went to the Thomas Jefferson High School for Science and Technology.
+        </p>
+
+        <Publications />
+        <CoolThingsIveMadeTextbased />
+        <ClubsAndTeamsTextbased />
       </div>
     </div>
   );
 }
 
-export default function Main() {
+function Publications() {
+  return (
+    <>
+      <h2>Publications</h2>
+      <h3>Robotics</h3>
+      <div>
+        <b>
+          Deceptive Path Planning via Reinforcement Learning with Graph Neural
+          Networks.
+        </b>{" "}
+        <u>Michael Y. Fatemi</u>, Wesley A. Suttle, Brian M. Sadler.{" "}
+        <em>Under review.</em>
+      </div>
+      <h3>Bioinformatics</h3>
+      <div>
+        <b>
+          Spatial Omics Driven Crossmodal Pretraining Applied to Graph-based
+          Deep Learning for Cancer Pathology Analysis.
+        </b>{" "}
+        Zarif Azher, <u>Michael Y. Fatemi</u>, Yunrui Lu, Gokul Srinivasan, Alos
+        Diallo, Brock Christensen, Lucas Salas, Fred Kolling IV, Laurent
+        Perrard, Scott Palisoul, Louis Vaickus, Joshua Levy.{" "}
+        <em>Pacific Symposium on Biocomputing, 2024.</em> (
+        <a href="https://psb.stanford.edu/psb-online/proceedings/psb24/azher.pdf">
+          Paper
+        </a>
+        )
+      </div>
+      <br />
+      <div>
+        <b>
+          Potential to Enhance Large Scale Molecular Assessments of Skin
+          Photoaging through Virtual Inference of Spatial Transcriptomics from
+          Routine Staining.
+        </b>{" "}
+        Gokul Srinivasan, Matthew Davis, Matthew LeBoeuf,{" "}
+        <u>Michael Y. Fatemi</u>, Zarif Azher, Yunrui Lu, Alos Diallo, Marietta
+        Saldias Montivero, Fred Kolling IV, Laurent Perrard, Lucas Salas, Brock
+        Christensen, Thomas Palys, Margaret Karagas, Scott Palisoul, Gregory
+        Tsongalis, Louis Vaickus, Sarah Preum, Joshua Levy.{" "}
+        <em>Pacific Symposium on Biocomputing, 2024.</em> (
+        <a href="https://psb.stanford.edu/psb-online/proceedings/psb24/srinivasan.pdf">
+          Paper
+        </a>
+        )
+      </div>
+      <br />
+      <div>
+        <b>
+          The Overlooked Role of Specimen Preparation in Bolstering Deep
+          Learning-Enhanced Spatial Transcriptomics Workflows.
+        </b>{" "}
+        <u>Michael Y. Fatemi</u>, Yunrui Lu, Alos B. Diallo, Gokul Srinivasan,
+        Zarif L. Azher, Brock C. Christensen, Lucas A. Salas, Gregory J.
+        Tsongalis, Scott M. Palisoul, Laurent Perreard, Fred W. Kolling IV,
+        Louis J. Vaickus, Joshua J. Levy. Submitted for review. August 2023. (
+        <a href="https://www.medrxiv.org/content/10.1101/2023.10.09.23296700v1">
+          Preprint
+        </a>
+        )
+      </div>
+      <br />
+      <br />
+      <b>
+        Inferring Spatially-Resolved Transcriptomics from Cell Detections.
+      </b>{" "}
+      <u>Michael Y. Fatemi</u>, Yunrui Lu, Cyril Sharma, Eric Feng, Zarif L.
+      Azher, Alos B. Diallo, Gokul Srinivasan, Grace M. Rosner, Kelli B.
+      Pointer, Brock C. Christensen, Lucas A. Salas, Gregory J. Tsongalis, Scott
+      M. Palisoul, Laurent Perreard, Fred W. Kolling IV, Louis J. Vaickus,
+      Joshua J. Levy Submitted for review. August 2023. (
+      <a href="https://www.medrxiv.org/content/10.1101/2023.10.09.23296701v1">
+        Preprint
+      </a>
+      )
+      <br />
+      <br />
+      <b>
+        Inferring spatial transcriptomics markers from whole slide images to
+        characterize metastasis-related spatial heterogeneity of colorectal
+        tumors: A pilot study.
+      </b>{" "}
+      Michael Y. Fatemi, Eric Feng, Cyril Sharma, Zarif Azher, Tarushii Goel,
+      Ojas Ramwala, Scott M. Palisoul, Rachael E. Barney, Laurent Perreard, Fred
+      W. Kolling, Lucas A. Salas, Brock C. Christensen, Gregory J. Tsongalis,
+      Louis J. Vaickus, Joshua J. Levy. March 2023.
+      <em>Journal of Pathology Informatics</em>. (
+      <a href="https://www.sciencedirect.com/science/article/pii/S2153353923001220">
+        Paper
+      </a>
+      , <a href="https://www.youtube.com/watch?v=yG-7DrbGoCI">Video</a>)
+    </>
+  );
+}
+
+function MainOld() {
   return (
     <Container>
       <GoogleAnalytics />
