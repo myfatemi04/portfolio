@@ -315,8 +315,7 @@ function Experience() {
       </div>
       <div className="project-row">
         <h2>
-          Reinforcement Learning Research with University of Maryland and Army
-          Research Lab
+          Reinforcement Learning Research with University of Maryland
         </h2>
         <em>May 2023 &ndash; August 2023</em>
         <div className="content">
