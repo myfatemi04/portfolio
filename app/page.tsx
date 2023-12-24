@@ -169,8 +169,41 @@ function CoolThingsIveMadeTextbased() {
   return (
     <>
       <h2>Projects</h2>
+      {/* Sound Camera */}
+      <h3>Sound Camera Project</h3>
+      <img
+        src="/images/soundcamera.png"
+        alt="Sound camera: Hexagonal microphone array with a camera on the top face and a Raspberry Pi below that."
+        style={{ width: "75%" }}
+      />
+      <br />
+      <em>
+        Hexagonal microphone array with a camera on the top face and a Raspberry
+        Pi below.
+      </em>
+      <p>
+        For a year-long student research project in high school, I made a "sound
+        camera" with a Raspberry Pi, an embedded webcam, and a microphone array.
+        It is capable of detecting the locations of sounds within 8º of accuracy
+        purely through a grid of microphones, and displaying them in real-time.
+      </p>
+      <p>
+        To do this, I implemented a beamforming algorithm in C and wrote code to
+        stream information from the microphone array to a processing server. I
+        shared my contributions to the open-source library,{" "}
+        <a href="https://github.com/introlab/odas">ODAS</a>.
+      </p>
+      <p>
+        If you want to read more about how I made it, see{" "}
+        <a href="https://docs.google.com/document/d/1do7sj8hAGTIEzs5tjTuxz3jxNuWoCZ0ob-_WXh10-J8/edit?usp=sharing">
+          this document
+        </a>{" "}
+        or this <a href="https://youtu.be/otgCmeRIEo4">video</a>. You can also
+        check out the code{" "}
+        <a href="https://github.com/myfatemi04/sound-camera">on Github</a>.
+      </p>
       {/* CCW */}
-      <h3>Cactus Courseware</h3>
+      {/* <h3>Cactus Courseware</h3>
       <Youtube
         id="JICyJuVcmh0"
         style={{ width: "100%", aspectRatio: "1920/1080" }}
@@ -189,9 +222,9 @@ function CoolThingsIveMadeTextbased() {
         <a href="http://github.com/myfatemi04/cactus-courseware-backend">
           Backend
         </a>
-      </div>
+      </div> */}
       {/* StreetSweep */}
-      <h3>StreetSweep</h3>
+      {/* <h3>StreetSweep</h3>
       <Youtube
         id="RMDFT7telOo"
         style={{ width: "100%", aspectRatio: "1920/1080" }}
@@ -205,7 +238,7 @@ function CoolThingsIveMadeTextbased() {
       <div className="link-row">
         <a href="http://github.com/myfatemi04/streetsweep-frontend">Frontend</a>
         <a href="http://github.com/myfatemi04/streetsweep">Backend</a>
-      </div>
+      </div> */}
       {/* WheelShare */}
       <h3>WheelShare</h3>
       <Youtube
@@ -314,9 +347,7 @@ function Experience() {
         </div>
       </div>
       <div className="project-row">
-        <h2>
-          Reinforcement Learning Research with University of Maryland
-        </h2>
+        <h2>Reinforcement Learning Research with University of Maryland</h2>
         <em>May 2023 &ndash; August 2023</em>
         <div className="content">
           <div className="col">
@@ -706,30 +737,6 @@ function MainImage() {
         </p>
       </div>
     </div>
-    // <div className="main-image">
-
-    /* <div className="background-pseudo"></div>
-      <div className="main-card">
-        <h1>Michael Fatemi</h1>
-
-        <p style={{ display: "inline-block" }}>
-          Hey! I'm Michael Fatemi, a software developer and machine learning
-          enthusiast. I have some experience with natural language processing
-          and full-stack development, and I'm interested in biotech, robotics,
-          aerospace, and quantum computing.
-        </p>
-
-        <div className="link-row">
-          <a href="https://github.com/myfatemi04">GitHub</a>
-
-          <a href="https://www.youtube.com/channel/UC0CG_oek4RpaqqJlJlFHSKQ">
-            YouTube
-          </a>
-
-          <a href="https://linkedin.com/in/michaelfatemi">LinkedIn</a>
-        </div>
-      </div> */
-    // </div>
   );
 }
 
@@ -758,24 +765,42 @@ export default function Main() {
       <div style={{ flex: 2, padding: "1rem" }}>
         <p>
           I'm Michael Fatemi, a software developer and machine learning
-          enthusiast.
+          enthusiast. I'm currently an undergraduate studying Computer Science
+          and Mathematics at the University of Virginia/UVA.
         </p>
-        <p>I am researching robotic intelligence and bioinformatics.</p>
+        <p>
+          I am researching robotic intelligence with the{" "}
+          <a href="https://collabrobotics.com/">
+            UVA Collaborative Robotics lab
+          </a>
+          , with a specific focus on in-context learning and data-efficient
+          training schemes. I am also a member of UVA's{" "}
+          <a href="https://autonomousracing.dev/">Autonomous Racing Team</a>.
+        </p>
         <p>
           Previously, I was a student researcher at Dartmouth's Emerging
           Diagnostic and Investigative Technologies lab, where I used deep
-          computer vision and statistical techniques to analyze colorectal
-          cancer data.
+          computer vision and statistical techniques to predict cellular
+          activity using spatially-resolved transcriptomics for colorectal
+          cancer tissue slides.
         </p>
         <p>
           I also developed robotic path planning techniques using deep
           reinforcement learning with graph neural networks at the US Army
-          Research Lab.
+          Research Lab. I improved upon a prior version of a robotic path
+          planning algorithm by reducing the time to generate a path by up to
+          97% without a significant decrease in path quality. I will be
+          presenting this as a poster at AAMAS 2024 (International Conference on
+          Autonomous Agents and Multiagent Systems).
         </p>
         <p>
-          Additionally, worked as a contractor with Kyron Learning, where I
+          Additionally, I worked as a contractor with Kyron Learning, where I
           developed methods to improve the factual accuracy and tutoring
-          capabilities of language models.
+          capabilities of language models. This included creating a Python API
+          and React website to demonstrate novel language modeling techniques,
+          and the implementation of pipelines like ReAct/chain of thought and
+          decomposing lessons into subgoals to improve an LLM's ability to
+          adhere to a coherent lesson plan.
         </p>
         <p>
           I am currently an undergraduate at the University of Virginia,
@@ -783,8 +808,8 @@ export default function Main() {
           I went to the Thomas Jefferson High School for Science and Technology.
         </p>
 
-        <Publications />
         <CoolThingsIveMadeTextbased />
+        <Publications />
         <ClubsAndTeamsTextbased />
       </div>
     </div>
@@ -802,7 +827,7 @@ function Publications() {
           Networks.
         </b>{" "}
         <u>Michael Y. Fatemi</u>, Wesley A. Suttle, Brian M. Sadler.{" "}
-        <em>Under review.</em>
+        <em>Poster presentation at AAMAS 2024.</em>
       </div>
       <h3>Bioinformatics</h3>
       <div>
@@ -873,10 +898,10 @@ function Publications() {
         characterize metastasis-related spatial heterogeneity of colorectal
         tumors: A pilot study.
       </b>{" "}
-      Michael Y. Fatemi, Eric Feng, Cyril Sharma, Zarif Azher, Tarushii Goel,
-      Ojas Ramwala, Scott M. Palisoul, Rachael E. Barney, Laurent Perreard, Fred
-      W. Kolling, Lucas A. Salas, Brock C. Christensen, Gregory J. Tsongalis,
-      Louis J. Vaickus, Joshua J. Levy. March 2023.
+      <u>Michael Y. Fatemi</u>, Eric Feng, Cyril Sharma, Zarif Azher, Tarushii
+      Goel, Ojas Ramwala, Scott M. Palisoul, Rachael E. Barney, Laurent
+      Perreard, Fred W. Kolling, Lucas A. Salas, Brock C. Christensen, Gregory
+      J. Tsongalis, Louis J. Vaickus, Joshua J. Levy. March 2023.
       <em>Journal of Pathology Informatics</em>. (
       <a href="https://www.sciencedirect.com/science/article/pii/S2153353923001220">
         Paper
