@@ -834,15 +834,71 @@ export default function Main() {
           <img src="/images/sized_cubes.png" style={{ width: "50%" }} />
         </p>
 
+        <h3>Autonomous Racing Team</h3>
         <p>
           I am also a member of UVA's{" "}
           <a href="https://autonomousracing.dev/">Autonomous Racing Team</a>,
           where I work on algorithms to detect and overtake opponents in
-          real-time.
-          <br />
-          <img src="/images/CAR.jpeg" style={{ width: "50%" }} />
+          real-time. Recently, I trained a YOLO-based computer vision model to
+          detect opponents, and cross-calibrated our camera setup with LiDAR
+          sensors to enable depth estimation.
         </p>
-
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src="/images/autonomousracing/CAR.jpeg"
+            style={{ width: "50%" }}
+          />
+          <p>
+            We got second place at the Indy Autonomous Challenge at CES 2024 in
+            Las Vegas!
+          </p>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ flex: 1 }}>
+            <img
+              src="/images/autonomousracing/front_left_center.png"
+              alt="LiDAR point cloud overlaid with images"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div style={{ flex: 1 }}>
+            <img
+              src="/images/autonomousracing/camera_fov_with_lidar.png"
+              alt="3D render of camera positions and field of view"
+              style={{ width: "100%" }}
+            />
+          </div>
+        </div>
+        <p>
+          I cross-calibrated LiDAR point clouds to enable us to estimate the
+          distance of opponent vehicles.
+        </p>
+        <h3>Intelligent Systems Research with University of Maryland</h3>
+        <p>
+          I also developed robotic path planning techniques using deep
+          reinforcement learning with graph neural networks as part of a summer
+          program with the University of Maryland and the US Army Research Lab.
+          I improved upon a prior version of a robotic path planning algorithm
+          by enabling inference at a 30x higher speed on 100x larger
+          environments. I will be presenting this as a{" "}
+          <u>poster at AAMAS 2024</u> (International Conference on Autonomous
+          Agents and Multiagent Systems).
+          <br />
+          <img src="/images/arl-robotics-1.png" style={{ width: "50%" }} />
+        </p>
+        <h3>Bioinformatics Research with Dartmouth</h3>
         <p>
           Previously, I was a student researcher at{" "}
           <a href="https://jlevy44.github.io/levylab/people/">
@@ -852,18 +908,10 @@ export default function Main() {
           predict cellular activity using spatially-resolved transcriptomics for
           colorectal cancer tissue slides.
           <br />
-          <img src="/images/journal_paper_figure.jpg" style={{ width: "100%" }} />
-        </p>
-        <p>
-          I also developed robotic path planning techniques using deep
-          reinforcement learning with graph neural networks at the US Army
-          Research Lab. I improved upon a prior version of a robotic path
-          planning algorithm by enabling inference at a 30x higher speed on 100x
-          larger environments. I will be presenting this as a{" "}
-          <u>poster at AAMAS 2024</u> (International Conference on Autonomous
-          Agents and Multiagent Systems).
-          <br />
-          <img src="/images/arl-robotics-1.png" style={{ width: "50%" }} />
+          <img
+            src="/images/journal_paper_figure.jpg"
+            style={{ width: "100%" }}
+          />
         </p>
         <p>
           Additionally, I worked as a contractor with{" "}
