@@ -828,10 +828,21 @@ export default function Main() {
           <a href="https://collabrobotics.com/">
             UVA Collaborative Robotics lab
           </a>
-          , with a specific focus on in-context learning and data-efficient
-          training schemes. I am also a member of UVA's{" "}
-          <a href="https://autonomousracing.dev/">Autonomous Racing Team</a>.
+          , with a specific focus on semantically-grounded motion planning and
+          human-robot interaction.
+          <br />
+          <img src="/images/sized_cubes.png" style={{ width: "50%" }} />
         </p>
+
+        <p>
+          I am also a member of UVA's{" "}
+          <a href="https://autonomousracing.dev/">Autonomous Racing Team</a>,
+          where I work on algorithms to detect and overtake opponents in
+          real-time.
+          <br />
+          <img src="/images/CAR.jpeg" style={{ width: "50%" }} />
+        </p>
+
         <p>
           Previously, I was a student researcher at{" "}
           <a href="https://jlevy44.github.io/levylab/people/">
@@ -840,15 +851,19 @@ export default function Main() {
           , where I used deep computer vision and statistical techniques to
           predict cellular activity using spatially-resolved transcriptomics for
           colorectal cancer tissue slides.
+          <br />
+          <img src="/images/journal_paper_figure.jpg" style={{ width: "100%" }} />
         </p>
         <p>
           I also developed robotic path planning techniques using deep
           reinforcement learning with graph neural networks at the US Army
           Research Lab. I improved upon a prior version of a robotic path
-          planning algorithm by reducing the time to generate a path by up to
-          97% without a significant decrease in path quality. I will be
-          presenting this as a <u>poster at AAMAS 2024</u> (International
-          Conference on Autonomous Agents and Multiagent Systems).
+          planning algorithm by enabling inference at a 30x higher speed on 100x
+          larger environments. I will be presenting this as a{" "}
+          <u>poster at AAMAS 2024</u> (International Conference on Autonomous
+          Agents and Multiagent Systems).
+          <br />
+          <img src="/images/arl-robotics-1.png" style={{ width: "50%" }} />
         </p>
         <p>
           Additionally, I worked as a contractor with{" "}
