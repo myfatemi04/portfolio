@@ -823,6 +823,7 @@ export default function Main() {
           enthusiast. I'm currently an undergraduate studying Computer Science
           and Mathematics at the University of Virginia/UVA.
         </p>
+        <h3>Robotics Lab</h3>
         <p>
           I am researching robotic intelligence with the{" "}
           <a href="https://collabrobotics.com/">
@@ -830,9 +831,23 @@ export default function Main() {
           </a>
           , with a specific focus on semantically-grounded motion planning and
           human-robot interaction.
-          <br />
-          <img src="/images/sized_cubes.png" style={{ width: "50%" }} />
         </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <img src="/images/sized_cubes.png" style={{ width: "50%" }} />
+          <p>
+            Enabling 3D object detection with a visual fiducial system
+            (AprilTags). We're using a set of 2 Microsoft Kinect cameras and a
+            Franka Panda arm. The green cube represents a 0.5m x 0.5m x 0.5m
+            volume. Our goal is to enable motion planning that works purely
+            through vision models.
+          </p>
+        </div>
 
         <h3>Autonomous Racing Team</h3>
         <p>
@@ -882,8 +897,9 @@ export default function Main() {
           </div>
         </div>
         <p>
-          I cross-calibrated LiDAR point clouds to enable us to estimate the
-          distance of opponent vehicles.
+          I cross-calibrated our cameras with our LiDAR sensors to enable us to
+          estimate the distance of opponent vehicles. Notice the opponent
+          vehicle in light orange on the left image.
         </p>
         <h3>Intelligent Systems Research with University of Maryland</h3>
         <p>
@@ -895,9 +911,21 @@ export default function Main() {
           environments. I will be presenting this as a{" "}
           <u>poster at AAMAS 2024</u> (International Conference on Autonomous
           Agents and Multiagent Systems).
-          <br />
-          <img src="/images/arl-robotics-1.png" style={{ width: "50%" }} />
         </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <img src="/images/arl-robotics-1.png" style={{ width: "50%" }} />
+          <p>
+            The agent learns to generate paths that can are ambiguous about the
+            ultimate goal when given different "budgets" for deceptiveness.
+          </p>
+        </div>
+
         <h3>Bioinformatics Research with Dartmouth</h3>
         <p>
           Previously, I was a student researcher at{" "}
@@ -913,6 +941,7 @@ export default function Main() {
             style={{ width: "100%" }}
           />
         </p>
+        <h3>LLM Contracting</h3>
         <p>
           Additionally, I worked as a contractor with{" "}
           <a href="https://www.kyronlearning.com/">Kyron Learning</a>, where I
@@ -922,6 +951,11 @@ export default function Main() {
           and the implementation of pipelines like ReAct/chain of thought and
           decomposing lessons into subgoals to improve an LLM's ability to
           adhere to a coherent lesson plan.
+        </p>
+        <p>
+          I collaborated with several educators to create a pipeline where
+          students could watch along with videos and be asked questions at
+          AI-suggested interaction points.
         </p>
         <p>
           I am currently an undergraduate at the University of Virginia,
